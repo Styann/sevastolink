@@ -1,0 +1,37 @@
+
+.mosaic {
+    /*position: absolute;*/
+    padding: 1% 2%;
+
+    display: none;
+
+    grid-template-columns: repeat(17, 3%);/*4*/
+    grid-column-gap: 3.0625%;/*2*/
+
+    grid-template-rows: repeat(10, auto);
+    grid-row-gap: 7%;
+    
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper{
+    display: grid;
+    place-items: end center;
+    aspect-ratio: 0.86/1;
+}
+
+.inner{
+    background-color: var(--foreground);
+    height: 100%;
+    width: 100%;
+    animation: tile-disappearrance 0.20s;
+    animation-timing-function: steps(1);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes tile-disappearrance {
+    from{ height: 100%; }
+    50%{ height: 15%; }
+    to{ height: 0%; }
+}
