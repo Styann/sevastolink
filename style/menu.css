@@ -1,0 +1,159 @@
+.menu{
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    display: none;
+    background-color: var(--background);
+
+}
+
+.title-bar{
+    background-color: var(--foreground);
+    
+    height: fit-content;
+    width: 80%;
+
+    margin: 1em auto;
+    padding: 5px 8px;
+
+    display: flex;
+}
+
+
+
+.close-button{
+    width: 28px;
+    height: 28px;
+
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background-color: var(--mid-green);
+}
+.close-button::before{
+    content: "\00a0";
+}
+
+.parent {
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+
+
+        
+.folders { 
+    grid-area: 1 / 1 / 6 / 2; 
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 19.2%);
+    grid-column-gap: 50px;
+    grid-row-gap: 1%;  
+    
+}
+
+.folder{
+    border: solid 3px var(--foreground);
+    padding: 6px;
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.folders-label { 
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px;
+    width: 80%;
+    margin: 0 auto;
+}
+.personal {
+     grid-area: 2 / 1 / 3 / 2;
+}
+.shared {
+     grid-area: 3 / 1 / 4 / 2;
+}
+.audio {
+     grid-area: 4 / 1 / 5 / 2;
+}
+.utility {
+     grid-area: 5 / 1 / 6 / 2;
+} 
+
+.folder-preselected{
+    background-color: white;
+    color:black;
+    border: solid 3px white;
+}
+
+.folder-selected{
+    border: solid 3px white;
+    border-width: 3px 16px;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 6 / 3;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 9.6%) 78.8%;
+    grid-column-gap: 0px;
+    grid-row-gap: 1%;
+}
+
+.file{
+    border: solid 3px var(--mid-green);
+    width: 90%;
+    padding: 6px 10px;
+    display: grid;
+    place-items: center start;
+}
+.file label{
+    font-size: 35px;
+}
+
+.file1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.file2{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.file-selected{
+    background-color: var(--mid-green);
+    border: solid 3px white;
+}
+
+.file-content{
+    /*display: none;*/
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid var(--foreground);
+    border-top: 20px solid var(--foreground);
+    height: 540px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    white-space: pre-wrap;
+    padding: 6px;
+}
+
+
+.pointer1{
+    background-color: white;
+    height: 6px;
+    width: 50px;
+}

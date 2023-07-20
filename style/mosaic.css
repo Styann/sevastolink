@@ -1,26 +1,33 @@
 
 .mosaic {
-    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
     padding: 1% 2%;
+    position: absolute;
+    box-sizing: border-box;
 
     display: none;
 
     grid-template-columns: repeat(17, 3%);/*4*/
     grid-column-gap: 3.0625%;/*2*/
 
-    grid-template-rows: repeat(10, auto);
-    grid-row-gap: 7%;
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-row-gap: 4%;
     
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--background);
 }
 
-.wrapper{
+.tile-wrapper{
     display: grid;
     place-items: end center;
-    aspect-ratio: 0.86/1;
+    aspect-ratio: 0.9/1;
 }
 
-.inner{
+.tile{
     background-color: var(--foreground);
     height: 100%;
     width: 100%;
