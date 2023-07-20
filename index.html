@@ -240,7 +240,7 @@
 
             
             <div class="div2">
-                <div class="file file1 file-selected">
+                <div class="file file1">
                     <label class="retro-white file-label">AUTOPSY</label>
                 </div>
                 <div class="file file2">
@@ -252,9 +252,16 @@
     </div>
 
 
+
+    
+</body>
     <script type="text/javascript" src="script/app.js"></script>
     <script type="text/javascript" src="script/async.js"></script>
-    <script>
+    <script type="module">
+        import {SystemTree} from './script/SystemTree.js';
+        import {Folder} from './script/Folder.js';
+        import {File} from './script/File.js';
+
 
         const t = "Hughes, I've put a manual lock on the door leading upstairs. Don't want any accidents until we figure what's going on here. \n\nChief <span class='retro-code'>0123</span>";
         const fileContent = document.getElementById('file-content');
@@ -269,10 +276,7 @@
         const progressbar = document.getElementById('progress');
 
         const menu = document.getElementById('menu');
-        const personal = document.getElementById('personal');
-        const shared = document.getElementById('shared');
-        const audio = document.getElementById('audio');
-        const utility = document.getElementById('utility');
+
 
         var preselectedFolder = null;
         var selectedFolder = personal;
@@ -288,60 +292,56 @@
         
         var ogg = 'SFX/Interactive_Terminal_Telem_0' ;
         const unableAudio = [new Audio(ogg+'3.ogg'), new Audio(ogg+'6.ogg'), new Audio(ogg+'7.ogg')];
-        for(let i=0; i<3; i++) unableAudio.volume = 0.3;
+        for(let i=0; i<3; i++) unableAudio.volume = 0.2;
 
         const fileSelectionAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg')
         fileSelectionAudio.volume = 0.3;
 
+        const fileTest = new File(1, 'TEST', 'TEST.', document.getElementById('file1'));
+        
+        const systemTree = new SystemTree([
+            new Folder(document.getElementById('personal'), [fileTest]),
+            new Folder(document.getElementById('shared'), []),
+            new Folder(document.getElementById('audio'), []),
+            new Folder(document.getElementById('utility'), [])
+        ]);
 
-        const folders = [personal, shared, audio, utility];
+ 
+        const files = document.getElementsByClassName('file');
 
-        var currentFolder = personal;
-        var isSelected = false;
+
 
         document.addEventListener('keydown', async (pressedKey) => {
             try{
                 switch(pressedKey.keyCode){
                     case controls["forward"]:
-                        if(currentFolder && !isSelected){
-                            var result = getAboveFolder(currentFolder, folders);
-                            if(result){
-                                currentFolder.classList.remove('folder-preselected');
-                                result.classList.add('folder-preselected');
-                                currentFolder = result;
-                            }else{
-                                throw new Error();
-                            }
-                        }
+                        systemTree.preselectAboveFolder();
                         break;
     
                     case controls["backward"]:
-                        if(currentFolder && !isSelected){
-                            var result = getBelowFolder(currentFolder, folders);
-                            if(result){
-                                //resetFolders(folders);
-                                currentFolder.classList.remove('folder-preselected');
-                                result.classList.add('folder-preselected');
-                                currentFolder = result;
-                            }else{
-                                throw new Error();
-                            }
-                        }
+                        systemTree.preselectBelowFolder();
                         break;
                     
                     case controls["use"]:
-                        if(currentFolder && !isSelected){
-                            currentFolder.classList.remove('folder-preselected');
-                            currentFolder.classList.add('folder-selected');
-                            isSelected = true;
+                        if(!systemTree.currentFolder.isSelected){
+                            systemTree.currentFolder.unpreselect();
+                            systemTree.currentFolder.select();
                             fileSelectionAudio.play();
+
+                            //systemTree.currentFolder.currentFile.select();
+                            console.log(systemTree.currentFolder.currentFile)
                         }
                         break;
                     case controls["return"]:
-                        if(currentFolder && isSelected){
-                            currentFolder.classList.remove('folder-selected');
-                            currentFolder.classList.add('folder-preselected');
-                            isSelected = false;
+                        if(systemTree.currentFolder.isSelected){
+                            systemTree.currentFolder.unselect();
+                            systemTree.currentFolder.preselect();
+                        }else{
+                            console.log('ololo')
+                            location.reload();
+                            /*display(loadingPage, 'none');
+                            display(menu, 'none');
+                            display(signin, 'grid');*/
                         }
                         break;
                 }
@@ -378,12 +378,6 @@
             };
         }*/
 
-
-
-
-
-
-
         async function runMosaicTransition(){
             display(mosaic, 'grid');
             for(let i=0; i<170; i++){
@@ -393,13 +387,9 @@
             display(mosaic, 'none');
         }
 
-    
-
-        /*
-            select files -> TELEM 4
+        /*select files -> TELEM 4
             select 'mail' -> telem 2
-            'mail' ineffective click -> telem 7 & 6 & 3 & 5
-        */
+            'mail' ineffective click -> telem 7 & 6 & 3 & 5*/
         const startup = new Audio('SFX/Interactive_Terminal_Startup.ogg');
         startup.volume = 0.3;
         
@@ -407,14 +397,10 @@
         loop.volume = 0;
         loop.loop = true;
 
-        /*startup.addEventListener('ended', () => {
-            loop.play();
-        });*/
-
         (async () => {
             
             //1
-            /*await waitForKey(undefined, true);
+            await waitForKey(undefined, true);
             display(signin, 'none');
             loop.play();
 
@@ -433,22 +419,12 @@
             display(loadingPage, 'none');
             //2
         
-            await runMosaicTransition();*/
+            await runMosaicTransition();
             
             //3
             display(menu, 'grid');
             //3
             
         })();
-        
-  
-        
-
-
-
-
     </script>
-
-    
-</body>
 </html>
