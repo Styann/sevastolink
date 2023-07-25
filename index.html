@@ -240,7 +240,7 @@
 
             
             <div class="div2">
-                <div class="file file1">
+                <div id="file1" class="file file1">
                     <label class="retro-white file-label">AUTOPSY</label>
                 </div>
                 <div class="file file2">
@@ -257,15 +257,12 @@
 </body>
     <script type="text/javascript" src="script/app.js"></script>
     <script type="text/javascript" src="script/async.js"></script>
+    <!--<script id="archiveLogs" type="application/json"  src="script/archiveLogs.json"></script>-->
     <script type="module">
         import {SystemTree} from './script/SystemTree.js';
         import {Folder} from './script/Folder.js';
         import {File} from './script/File.js';
 
-
-        const t = "Hughes, I've put a manual lock on the door leading upstairs. Don't want any accidents until we figure what's going on here. \n\nChief <span class='retro-code'>0123</span>";
-        const fileContent = document.getElementById('file-content');
-        fileContent.innerHTML = t;
 
         const signin = document.getElementById('sign-in');
         
@@ -290,17 +287,19 @@
             "return" : 65
         };
         
-        var ogg = 'SFX/Interactive_Terminal_Telem_0' ;
-        const unableAudio = [new Audio(ogg+'3.ogg'), new Audio(ogg+'6.ogg'), new Audio(ogg+'7.ogg')];
-        for(let i=0; i<3; i++) unableAudio.volume = 0.2;
-
-        const fileSelectionAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg')
-        fileSelectionAudio.volume = 0.3;
+        const personalFolder = new Folder(document.getElementById('personal'), []);
+        const archiveLogs = [];
+        const archiveLogsJSON = JSON.parse(loadFile('./script/archiveLogs.json'));
+        console.log(archiveLogsJSON)
+        for(let i = 0; i<10; i++){
+            let archiveLogJSON = archiveLogsJSON[i];
+            personalFiles[i] = new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'])
+        }
 
         const fileTest = new File(1, 'TEST', 'TEST.', document.getElementById('file1'));
         
         const systemTree = new SystemTree([
-            new Folder(document.getElementById('personal'), [fileTest]),
+            personalFolder,
             new Folder(document.getElementById('shared'), []),
             new Folder(document.getElementById('audio'), []),
             new Folder(document.getElementById('utility'), [])
@@ -315,38 +314,47 @@
             try{
                 switch(pressedKey.keyCode){
                     case controls["forward"]:
-                        systemTree.preselectAboveFolder();
+                        if(!systemTree.currentFolder.isSelected){
+                            //move folder higher
+                            systemTree.preselectAboveFolder();
+                        }else{
+                            systemTree.currentFolder.selectAboveFile();
+                        }
+
                         break;
     
                     case controls["backward"]:
-                        systemTree.preselectBelowFolder();
+                        if(!systemTree.currentFolder.isSelected){
+                            //move folder lower
+                            systemTree.preselectBelowFolder();
+                        }else{
+                            console.log('kjh')
+                            console.log(systemTree.currentFolder.getBelowFile())
+                            systemTree.currentFolder.selectBelowFile();
+                        }
                         break;
                     
                     case controls["use"]:
                         if(!systemTree.currentFolder.isSelected){
+                            //select folder and file 1
                             systemTree.currentFolder.unpreselect();
                             systemTree.currentFolder.select();
-                            fileSelectionAudio.play();
-
-                            //systemTree.currentFolder.currentFile.select();
-                            console.log(systemTree.currentFolder.currentFile)
+                            systemTree.currentFolder.currentFile.select();
+                        }else{
+                            console.log('')
                         }
                         break;
                     case controls["return"]:
                         if(systemTree.currentFolder.isSelected){
-                            systemTree.currentFolder.unselect();
-                            systemTree.currentFolder.preselect();
+                            //unselect folder
+                            systemTree.currentFolder.unselect(false);
                         }else{
-                            console.log('ololo')
+                            //return to sign in
                             location.reload();
-                            /*display(loadingPage, 'none');
-                            display(menu, 'none');
-                            display(signin, 'grid');*/
                         }
                         break;
                 }
             }catch(error){
-                unableAudio[getRandomInt(3)].play();
             }
         });
 
@@ -387,9 +395,10 @@
             display(mosaic, 'none');
         }
 
-        /*select files -> TELEM 4
-            select 'mail' -> telem 2
-            'mail' ineffective click -> telem 7 & 6 & 3 & 5*/
+        /*preselect folder -> TELEM 4
+            select folder -> telem 1.2
+            'mail' ineffective click -> telem 7 & 6 & 3 & 5
+            change log -> 6*/
         const startup = new Audio('SFX/Interactive_Terminal_Startup.ogg');
         startup.volume = 0.3;
         
@@ -400,7 +409,7 @@
         (async () => {
             
             //1
-            await waitForKey(undefined, true);
+            /*await waitForKey(undefined, true);
             display(signin, 'none');
             loop.play();
 
@@ -419,7 +428,7 @@
             display(loadingPage, 'none');
             //2
         
-            await runMosaicTransition();
+            await runMosaicTransition();*/
             
             //3
             display(menu, 'grid');

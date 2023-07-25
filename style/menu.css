@@ -140,7 +140,7 @@
 }
 
 .file-content{
-    /*display: none;*/
+    display: none;
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid var(--foreground);
     border-top: 20px solid var(--foreground);

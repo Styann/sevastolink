@@ -1,20 +1,23 @@
 export class SystemTree{
     folders;
     currentFolder;
+    fileSelectionAudio;
 
     constructor(folders){
         this.folders = folders;
         this.currentFolder = folders[0];
+        this.fileSelectionAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
+        this.fileSelectionAudio = 0.3;
     }
 
     getAboveFolder(){
         let index = this.folders.indexOf(this.currentFolder);
-        return (this.folders[index-1]) ? this.folders[index-1] : null;
+        return (index != 0) ? this.folders[index-1] : this.folders[this.folders.length-1];
     }
     
     getBelowFolder(){
         let index = this.folders.indexOf(this.currentFolder);
-        return (this.folders[index+1]) ? this.folders[index+1] : null;
+        return (index != (this.folders.length-1)) ? this.folders[index+1] : this.folders[0];
     }
 
     resetFolders(){
@@ -25,13 +28,10 @@ export class SystemTree{
 
     #preselectFolder(folder){
         if(!this.currentFolder.isSelected){
-            if(folder){
-                this.currentFolder.unpreselect();
-                this.currentFolder = folder;
-                this.currentFolder.preselect();
-            }else{
-                throw new Error();
-            }
+            this.currentFolder.unselect();
+            this.currentFolder.unpreselect();
+            this.currentFolder = folder;
+            this.currentFolder.preselect();
         }
     }
 

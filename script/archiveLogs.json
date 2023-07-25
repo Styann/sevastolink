@@ -1,0 +1,99 @@
+{
+    "files":[
+        {
+            "id":1,
+            "title":"Just Missed You",
+            "content":"Verlaine, you on the lookout for a navigational officer? I have a friend that's just lost his ship and he's looking for work. I can vouch for him, he's got good papers.\n\nSame old story — the megacorps undercut him, picked up all his clients. Contracts are getting harder to come by for the smaller companies and I'm thinking of getting out myself while I still have something to sell. Sounds like you're doing okay though. Dropped by the docks and heard you just shipped out. Sevastopol Station — what a shithole. Still, I hear Weyland-Yutani pay well. Good luck to you — if you can't beat them, right? Let's catch up when you get back.\n\nBlane. "
+        },
+        {
+            "id":2,
+            "title":"RE: Nostromo Incident",
+            "content":"To N. Taylor\nRE: Nostromo incident, Weyland-Yutani file #DS9398476\n\nHey, Taylor, I got your case request. It may take me a while to dig out the files and the incident happened before my time at the company, so I'm a bit fuzzy on the details.\n\nIn 2122, the Weyland-Yutani cargo vessel the USCSS Nostromo went missing. No trace was found of its cargo or crew. Apart from a new science officer, the rest of the crew had worked together before, seven in all:\n\n    Dallas — Captain\n    Ash — Science Officer\n    Kane — Executive Officer.\n    Ripley — Warrant Officer\n    Lambert — Navigation Officer\n    Parker — Chief Engineer\n    Brett — Engineer Technician\n\nWeyland-Yutani lost a lot of money from it, it's a bit of a black mark in the history. Get the impression they don't like to mention it. Anyway, I'll try to find the files later, clarify some of the points. If you want I can help you go through them? Maybe some of your luck will rub off on me, I hear upstairs have an eye on you for something big.\n\nSaul."
+        },
+        {
+            "id":3,
+            "title":"Torrens Manifest",
+            "content":"Name: MSV-7750 Torrens M-class starship\n\nCaptain: Verlaine, Diane\nNavigator/Comm Officer: Connor, William\n\nOwner: Verlaine, Diane\nContractor: Weyland-Yutani\n\nOutbound and return transportation for Weyland-Yutani retrieval team to Sevastopol station.\nTeam consists of three W-Y employees: Samuels, C, Ripley, A, Taylor, N.\n\nPassengers: Samuels, Christopher. Ripley, Amanda. Taylor, Nina.\nNumber of decks — Two\nNumber of crew — Two\n\nInterstellar communications antenna. Long haul hypersleep chamber. Commercial passenger/cargo ships retrofitted from a tow rig. Retains operational heavy duty tow umbilical. "
+        },
+        {
+            "id":4,
+            "title":"Decommissioning",
+            "content":"To engineering team\nRE: Decommission\nSo boys and girls, you've probably heard the whispers about Sevastopol by now and I can confirm it's official. Sevastopol is being decommissioned.\n\nI will go over with each of you what this means in regards to your contracts and next placement, but for now we still have a job to do. The suits want this done with a skeleton crew, which means we'll only be getting a few outside contractors to help, but it does mean overtime. I recommend taking what you can while it's available.\n\nI should point out that the decommission does not mean \"lucky dip\". Everything here has to be accounted for and I will personally escort anyone found helping themselves to equipment to Marshal Waits.\n\nChief "
+        },
+        {
+            "id":5,
+            "title":"Moved Our Stash",
+            "content":"Langley, if you're looking for our stash, I've moved it. You left it right out in the open where anyone could have taken it! Jesus, do you know what I had to do to get it? I've hidden it in one of the storerooms — you should be able to find it. The code is 0340. Don't worry, no one goes down to the terminal anymore. Not after what happened.\n\nAlso, we're out of meds and low on water so you're going to need to get some — it's your turn. Maybe it'll teach you to take care of our stuff in future.\n\nAnna "
+        },
+        {
+            "id":6,
+            "title":"Goodbye from Seegson",
+            "content":"We've had a long journey together but sadly it's coming to an end. Seegson Corp would like to take this opportunity to thank all of you who worked and lived at Sevastopol over the years, and hopes that Seegson has helped to make it a productive and rewarding environment. Our investment and belief in the station has never wavered.\n\nBe assured that Seegson's APOLLO central A.I and \"Working Joe\" androids will be there to serve Sevastopol until the last rivet is removed. We wish you all the very best for the future. After all, Sevastopol isn't just a station. It's people.\n\nSeegson Corp. "
+        },
+        {
+            "id":7,
+            "title":"Kill the Power",
+            "content":"Harris? Turner? Get back here now. We have a track, somewhere in engineering. Lock the terminal down, kill the power, and don't forget your reports. Make them thorough. We're going to need our paperwork to be bulletproof when this shit is over. Waits out.\"\n\n\n008. Terminal Riot (Julia Jones, Dec 2, 2137)\n\"Julia Jones. Today's update. After numerous demands, Marshal Waits finally called a public meeting to address the rumors that have been circulating on Sevastopol. But instead of the answers we wanted, he continued to be evasive and after only a few minutes he and his team were pelted by projectiles from an angry crowd. A gun was fired, there was panic and now Waits and what's left of his team are forcibly ejecting us from the terminal. Feels like we're on our own now.\"\n\n\n009. Pulling the Plug (Harper, Sep 22, 2137)\nZoe, I'm sorry, but I won't need you to come in next week.\n\nAs you know, the store's been in trouble for some time now and I couldn't hold off the creditors any longer. There's just no one coming to Sevastopol anymore.\n\nIt's not just us either — it sounds like the whole station is in the red and they're pulling the plug. Going to sell it off for scrap, I guess. I was speaking to one of the engineers and he reckons they'll announce it soon. I'm telling you this so you don't stick around looking for another job. Sevastopol's finished, time to move on.\n\nHarper "
+        },
+        {
+            "id":8,
+            "title":"Terminal Riot",
+            "content":"Julia Jones. Today's update. After numerous demands, Marshal Waits finally called a public meeting to address the rumors that have been circulating on Sevastopol. But instead of the answers we wanted, he continued to be evasive and after only a few minutes he and his team were pelted by projectiles from an angry crowd. A gun was fired, there was panic and now Waits and what's left of his team are forcibly ejecting us from the terminal. Feels like we're on our own now." 
+        },
+        {
+            "id":9,
+            "title":"Pulling the Plug",
+            "content":"Zoe, I'm sorry, but I won't need you to come in next week.\n\nAs you know, the store's been in trouble for some time now and I couldn't hold off the creditors any longer. There's just no one coming to Sevastopol anymore.\n\nIt's not just us either — it sounds like the whole station is in the red and they're pulling the plug. Going to sell it off for scrap, I guess. I was speaking to one of the engineers and he reckons they'll announce it soon. I'm telling you this so you don't stick around looking for another job. Sevastopol's finished, time to move on.\n\nHarper "
+        },
+        {
+            "id":10,
+            "title":"To All Spaceflight Employees",
+            "content":"To all Spaceflight Terminal employees: In the interest of public safety and the prevention of panic, it must be made clear to all potential passengers that there are currently no scheduled flights leaving Sevastopol, nor ships available.\n\nThe Colonial Marshals are investigating problems on-station and will update accordingly.\n\nFrom the office of Marshal Waits. "
+        },
+        {
+            "id":11,
+            "title":"What Is APOLLO?",
+            "content":"What is APOLLO? APOLLO is the central A.I that monitors and provides guidance for all the Seegson \"Working Joes\" on Sevastopol. APOLLO also oversees all communications on the station. So wherever you are, you know you're in safe hands.\n\nSeegson, tomorrow, together. "
+        },
+        {
+            "id":12,
+            "title":"Last Power Coupling",
+            "content":"Harris? This is Turner. I found the last power coupling. Took me a while, but it's shut off now. Just fitting the last security brace. Come find me when you've shut yours down. Then we can get the hell out of here. Jesus, man... I'm hearing noises everywhere. Every creak and... Just hurry the fuck up, will you?"
+        },
+        {
+            "id":13,
+            "title":"Another Break-In",
+            "content":"Harris? It's Turner. I had to deal with that wasted asshole again. This time he nearly wrecked the door with a Maintenance Jack. Guess he figures it's safe here, wants to lock himself in. Screw him. We've got too much to worry about without babysitting drunks. Anyway, I threw him in the evidence lock-up. Let the son of a bitch sleep it off." 
+        },
+        {
+            "id":14,
+            "title":"Dead Soldiers",
+            "content":"Hello? I wanna make a complaint. To the... highest authority, okay? My name is Zachary Watson. That's Watson, you get that? My complaint is this: The fucking Marshals. They should be protecting us, it's their job! Something's on the station with us and no one knows what it is, no one fucking knows! They put braces on the doors — lockdown. You know, like to keep something out! I'm fucking terrified, man. I'm fucking... Shit, it's so cold. I don't think this fucking thing even works." 
+        },
+        {
+            "id":15,
+            "title":"Interview:",
+            "content":"Interview subject: Heyst. Did I say that right? Heyst? Look, if you can't even tell me your name we're going to be here a hell of a long time. I just want to know about your boss. He's got you into a lot of trouble. Someone's got to be accountable. I'm gonna make damn sure someone's accountable. No? Tough guy, eh? Turner, turn off the tape. Maybe our friend here is just shy." 
+        },
+        {
+            "id":16,
+            "title":"A Blind Eye",
+            "content":"S — I managed to get my hands on that stuff I was talking about. Chief won't even notice the stock missing; things always get lost when a station's closing down. Don't worry about customers either, Sinclair's told his men to turn a blind eye. They'd probably be too busy goofing off or taking backhanders to notice anyway — you get what you pay for, I guess.\n\nBailey. "
+        },
+        {
+            "id":17,
+            "title":"Two-Man Rule",
+            "content":"Nearson, Leonard, you're both first shift on the door so read carefully. Putting this together wasn't easy and we don't want intruders getting in because you didn't read the instructions properly.\n\nThis here is what you call a two-man rule lock. This means it needs two to open the door simultaneously from two different consoles. Most of us don't know each other, so this is the safest way of making sure everything stays secure and none of us decide to head off on their own with our stuff. When you're on shift, take it in turns to keep guard and notify the other if one of us needs to be let in or out.\n\nThat means just us, no one else. No matter how much anyone begs and no matter what sob story they try and pull. I was with a group before and we got soft and now I'm the only one left. Trust no one.\n\nJoe "
+        },
+        {
+            "id":18,
+            "title":"Inventory",
+            "content":"Inventory — No one is to take anything or mark it off the list without talking to me first!!!\n\nAspirin — X4\nCanned food — 32\nCereals — 6 boxes\nWater — 4 gallons\nToothpaste — 12 tubes\nCigarettes — 3 cartons\nToilet paper — 26 rolls\nIndustrial tape — 6 rolls\nMed kits — 2\nPowdered milk — X 52\n\nNotes: Running low on ammunition. Zoe managed to pick up some prescription drugs, all addressed to the same person. Guess they didn't need them anymore. "
+        },
+        {
+            "id":19,
+            "title":"Leave Work Now",
+            "content":"Marie, listen to me very carefully. I want you to leave work now, collect Claire, pick up the cat and head home. We need to find someplace safe until Seegson send a ship. I saw the guy from down the hall — can't remember his name, the one in the dirty baseball cap, weird smell — he had something in his coat, I think it was a gun. He just looked right through me. Don't talk to anyone. Don't tell them where you're going. I'll meet you as soon as I can." 
+        }
+    ]
+}

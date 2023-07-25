@@ -3,6 +3,7 @@ export class Folder{
     files;
     currentFile;
     isSelected;
+    isEnable;
 
     constructor(element, files){
         this.element = element;
@@ -17,9 +18,11 @@ export class Folder{
         this.element.classList.add('folder-selected');
     }
 
-    unselect(){
+    unselect(front = true){
         this.isSelected = false;
-        this.element.classList.remove('folder-selected');
+        if(front){
+            this.element.classList.remove('folder-selected');
+        }
     }
 
     preselect(){
