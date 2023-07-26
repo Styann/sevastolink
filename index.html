@@ -220,11 +220,16 @@
         </div>
 
         <div class="parent">
+
+            
             <div class="folders">
+                <div class="string-1"></div>
+                
+
                 <div class="folders-label">
                     <label class="retro-green fz30">FOLDERS</label>
                 </div>
-                <div id="personal" class="folder personal folder-preselected">
+                <div id="personal" class="folder personal">
                     <label class="retro">PERSONAL</label>
                 </div>
                 <div id="shared" class="folder shared">
@@ -241,14 +246,20 @@
             
             <div class="div2">
                 <div id="file1" class="file file1">
-                    <label class="retro-white file-label">AUTOPSY</label>
+                        <label class="retro-white"></label>
+                        <div class="play-icon"></div>
                 </div>
-                <div class="file file2">
-                    <label class="retro-white file-label">File 1</label>
+                <div id="file2" class="file file2">
+                    <label class="retro-white"></label>
                 </div>
-                <div id="file-content" class="file-content retro-white fz30">
+                <div tabindex="0" id="file-content" class="file-content retro-white fz30 disabled-focus">
+                    <p></p>
                 </div>
             </div> 
+    </div>
+
+    <div>
+   
     </div>
 
 
@@ -257,9 +268,8 @@
 </body>
     <script type="text/javascript" src="script/app.js"></script>
     <script type="text/javascript" src="script/async.js"></script>
-    <!--<script id="archiveLogs" type="application/json"  src="script/archiveLogs.json"></script>-->
     <script type="module">
-        import {SystemTree} from './script/SystemTree.js';
+        import {Root} from './script/Root.js';
         import {Folder} from './script/Folder.js';
         import {File} from './script/File.js';
 
@@ -284,77 +294,128 @@
             "left" : 81,
             "right" : 68,
             "use": 69,
-            "return" : 65
+            "return" : 65,
+            "page-up" : 33,
+            "page-down" : 34
         };
-        
+
+        const files = document.getElementsByClassName('file');
+        const file1 = document.getElementById('file1');
+        const file2 = document.getElementById('file2');
+        const fileContent = document.getElementById('file-content');
+
         const personalFolder = new Folder(document.getElementById('personal'), []);
-        const archiveLogs = [];
+        const sharedFolder = new Folder(document.getElementById('shared'), []);
+        const audioFolder = new Folder(document.getElementById('audio'), []);
+        const utilityFolder = new Folder(document.getElementById('utility'), []);
+
+        let archiveLogJSON = null;
         const archiveLogsJSON = JSON.parse(loadFile('./script/archiveLogs.json'));
-        console.log(archiveLogsJSON)
-        for(let i = 0; i<10; i++){
-            let archiveLogJSON = archiveLogsJSON[i];
-            personalFiles[i] = new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'])
+        for(let i = 0; i<2; i++){
+            archiveLogJSON = archiveLogsJSON['files'][i];
+            var file = (i==0) ? file1 : file2;
+            personalFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
         }
 
-        const fileTest = new File(1, 'TEST', 'TEST.', document.getElementById('file1'));
-        
-        const systemTree = new SystemTree([
-            personalFolder,
-            new Folder(document.getElementById('shared'), []),
-            new Folder(document.getElementById('audio'), []),
-            new Folder(document.getElementById('utility'), [])
-        ]);
+        for(let i = 2; i<4; i++){
+            archiveLogJSON = archiveLogsJSON['files'][i];
+            var file = (i==2) ? file1 : file2;
+            sharedFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+        }
 
- 
-        const files = document.getElementsByClassName('file');
+        for(let i = 4; i<6; i++){
+            archiveLogJSON = archiveLogsJSON['files'][i];
+            var file = (i==4) ? file1 : file2;
+            audioFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+        }
+
+        for(let i = 6; i<8; i++){
+            archiveLogJSON = archiveLogsJSON['files'][i];
+            var file = (i==6) ? file1 : file2;
+            utilityFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+        }
 
 
-
-        document.addEventListener('keydown', async (pressedKey) => {
-            try{
-                switch(pressedKey.keyCode){
-                    case controls["forward"]:
-                        if(!systemTree.currentFolder.isSelected){
-                            //move folder higher
-                            systemTree.preselectAboveFolder();
-                        }else{
-                            systemTree.currentFolder.selectAboveFile();
-                        }
-
-                        break;
     
-                    case controls["backward"]:
-                        if(!systemTree.currentFolder.isSelected){
-                            //move folder lower
-                            systemTree.preselectBelowFolder();
-                        }else{
-                            console.log('kjh')
-                            console.log(systemTree.currentFolder.getBelowFile())
-                            systemTree.currentFolder.selectBelowFile();
+        const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder]);
+
+
+
+        /*window.addEventListener("gamepadconnected", function(e) {
+            console.log("Manette connectée à l'indice %d : %s. %d boutons, %d axes.",
+                e.gamepad.index, e.gamepad.id,
+                e.gamepad.buttons.length, e.gamepad.axes.length);
+                console.log(e.gamepad.buttons[0])
+                setInterval(function(){
+                    a 0
+                    b 1
+                    x 2
+                    y 3
+                    for(let i = 0; i<e.gamepad.buttons.length; i++){
+                        if(e.gamepad.buttons[i].pressed){
+                            console.log(i)
                         }
-                        break;
-                    
-                    case controls["use"]:
-                        if(!systemTree.currentFolder.isSelected){
-                            //select folder and file 1
-                            systemTree.currentFolder.unpreselect();
-                            systemTree.currentFolder.select();
-                            systemTree.currentFolder.currentFile.select();
-                        }else{
-                            console.log('')
-                        }
-                        break;
-                    case controls["return"]:
-                        if(systemTree.currentFolder.isSelected){
-                            //unselect folder
-                            systemTree.currentFolder.unselect(false);
-                        }else{
-                            //return to sign in
-                            location.reload();
-                        }
-                        break;
+                    }
+                }, 100)
+        });*/
+
+
+
+
+        document.addEventListener('keydown', (pressedKey) => {
+
+            if(pressedKey.repeat){
+
+            }else{
+                try{
+                    switch(pressedKey.keyCode){
+                        case controls["forward"]:
+                            if(!root.currentFolder.isSelected){
+                                //move folder above
+                                root.preselectAboveFolder();
+                                root.currentFolder.setupFiles();
+                            }else{
+                                //move file above
+                                root.currentFolder.selectAboveFile();
+                            }
+    
+                            break;
+        
+                        case controls["backward"]:
+                            if(!root.currentFolder.isSelected){
+                                //move folder below
+                                root.preselectBelowFolder();
+                                root.currentFolder.setupFiles();
+                            }else{
+                                //move file below
+                                root.currentFolder.selectBelowFile();
+                            }
+                            break;
+                        
+                        case controls["use"]:
+                            if(!root.currentFolder.isSelected){
+                                //select folder and file 1
+                                root.currentFolder.unpreselect();
+                                root.currentFolder.select();
+                                root.currentFolder.currentFile.select();
+                            }else{
+                                //trying to select a file with no success
+                                root.currentFolder.currentFile.bip();
+                            }
+                            break;
+                        case controls["return"]:
+                            if(root.currentFolder.isSelected){
+                                //unselect folder
+                                root.currentFolder.unselect(false);
+                                root.currentFolder.currentFile.unselect();
+                            }else{
+                                //return to sign in
+                                location.reload();
+                            }
+                            break;
+                    }
+                }catch(error){
                 }
-            }catch(error){
             }
         });
 

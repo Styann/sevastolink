@@ -1,12 +1,12 @@
-export class SystemTree{
+export class Root{
     folders;
     currentFolder;
-    fileSelectionAudio;
 
     constructor(folders){
         this.folders = folders;
         this.currentFolder = folders[0];
-        this.fileSelectionAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
+        this.#preselectFolder(this.currentFolder);
+        this.currentFolder.setupFiles();
         this.fileSelectionAudio = 0.3;
     }
 
