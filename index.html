@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style/mosaic.css">
     <link rel="stylesheet" href="style/menu.css">
 
+    <link rel="stylesheet" href="style/ArchiveLog.css">
+    <link rel="stylesheet" href="style/Folder.css">
+
+    <script type="text/javascript" src="script/app.js"></script>
+    <script type="text/javascript" src="script/async.js"></script>
 </head>
 <body>
 
@@ -223,7 +228,6 @@
 
             
             <div class="folders">
-                <div class="string-1"></div>
                 
 
                 <div class="folders-label">
@@ -243,16 +247,22 @@
                 </div>
             </div>
 
-            
             <div class="div2">
-                <div id="file1" class="file file1">
-                        <label class="retro-white"></label>
-                        <div class="play-icon"></div>
+                <div class="angle step3"></div> 
+            </div>
+            
+            <div class="div3">
+                <div id="archive-log-list" class="archive-log-list">
+
+                    <!--<div class="file-wrapper">
+                        <div class="file-selector"></div>
+                        <div class="file">
+                            <label class="retro-white file-label">TEST</label>
+                        </div>
+                    </div>-->
                 </div>
-                <div id="file2" class="file file2">
-                    <label class="retro-white"></label>
-                </div>
-                <div tabindex="0" id="file-content" class="file-content retro-white fz30 disabled-focus">
+
+                <div tabindex="0" id="archive-log-content" class="archive-log-content retro-white fz30 disabled-focus">
                     <p></p>
                 </div>
             </div> 
@@ -262,16 +272,10 @@
    
     </div>
 
-
-
-    
-</body>
-    <script type="text/javascript" src="script/app.js"></script>
-    <script type="text/javascript" src="script/async.js"></script>
     <script type="module">
         import {Root} from './script/Root.js';
         import {Folder} from './script/Folder.js';
-        import {File} from './script/File.js';
+        import {ArchiveLog} from './script/ArchiveLog.js';
 
 
         const signin = document.getElementById('sign-in');
@@ -284,9 +288,6 @@
 
         const menu = document.getElementById('menu');
 
-
-        var preselectedFolder = null;
-        var selectedFolder = personal;
 
         const controls = {
             "forward" : 90,
@@ -302,64 +303,44 @@
         const files = document.getElementsByClassName('file');
         const file1 = document.getElementById('file1');
         const file2 = document.getElementById('file2');
-        const fileContent = document.getElementById('file-content');
+        const fileContent = document.getElementById('archive-log-content');
+        const archiveLogList = document.getElementById('archive-log-list');     
 
-        const personalFolder = new Folder(document.getElementById('personal'), []);
-        const sharedFolder = new Folder(document.getElementById('shared'), []);
-        const audioFolder = new Folder(document.getElementById('audio'), []);
-        const utilityFolder = new Folder(document.getElementById('utility'), []);
+        const personalFolder = new Folder(document.getElementById('personal'), [], archiveLogList);
+        const sharedFolder = new Folder(document.getElementById('shared'), [], archiveLogList);
+        const audioFolder = new Folder(document.getElementById('audio'), [], archiveLogList);
+        const utilityFolder = new Folder(document.getElementById('utility'), [], archiveLogList);
 
         let archiveLogJSON = null;
         const archiveLogsJSON = JSON.parse(loadFile('./script/archiveLogs.json'));
-        for(let i = 0; i<2; i++){
+        for(let i = 0; i<6; i++){
             archiveLogJSON = archiveLogsJSON['files'][i];
-            var file = (i==0) ? file1 : file2;
-            personalFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+            personalFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], null, fileContent));
         }
 
         for(let i = 2; i<4; i++){
             archiveLogJSON = archiveLogsJSON['files'][i];
             var file = (i==2) ? file1 : file2;
-            sharedFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
-        }
-
-        for(let i = 4; i<6; i++){
-            archiveLogJSON = archiveLogsJSON['files'][i];
-            var file = (i==4) ? file1 : file2;
-            audioFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+            sharedFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
         }
 
         for(let i = 6; i<8; i++){
             archiveLogJSON = archiveLogsJSON['files'][i];
             var file = (i==6) ? file1 : file2;
-            utilityFolder.addFile(new File(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+            utilityFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
+        }
+
+
+        for(let i = 0; i<151; i++){
+            archiveLogJSON = archiveLogsJSON['files'][i];
+            if(archiveLogJSON["audio"] !== ""){
+                audioFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file1, fileContent, archiveLogJSON["audio"]));
+            }
         }
 
 
     
         const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder]);
-
-
-
-        /*window.addEventListener("gamepadconnected", function(e) {
-            console.log("Manette connectée à l'indice %d : %s. %d boutons, %d axes.",
-                e.gamepad.index, e.gamepad.id,
-                e.gamepad.buttons.length, e.gamepad.axes.length);
-                console.log(e.gamepad.buttons[0])
-                setInterval(function(){
-                    a 0
-                    b 1
-                    x 2
-                    y 3
-                    for(let i = 0; i<e.gamepad.buttons.length; i++){
-                        if(e.gamepad.buttons[i].pressed){
-                            console.log(i)
-                        }
-                    }
-                }, 100)
-        });*/
-
-
 
 
         document.addEventListener('keydown', (pressedKey) => {
@@ -400,7 +381,11 @@
                                 root.currentFolder.currentFile.select();
                             }else{
                                 //trying to select a file with no success
-                                root.currentFolder.currentFile.bip();
+                                if(root.currentFolder.currentFile.audio){
+                                    root.currentFolder.currentFile.audio.play();
+                                }else{
+                                    root.currentFolder.currentFile.bip();
+                                }
                             }
                             break;
                         case controls["return"]:
@@ -418,34 +403,6 @@
                 }
             }
         });
-
-
-        /*mouse selection*/
-        /*for(const folder of folders){
-            folder.onclick = () => {
-                selectFolder(folder, folders, currentFolder);
-            };
-        }*/
-
-        /*mouse preselection*/
-        /*for(const folder of folders){
-            folder.onmouseover = () => {
-                if(!folder.classList.contains('folder-selected')){
-                    for(const folder of folders){
-                        folder.classList.remove('folder-preselected')
-                    }
-                    preselectedFolder = folder;
-                    preselectedFolder.classList.toggle('folder-preselected');
-                }
-            };
-
-            folder.onmouseout = () => {
-                if(folder.classList.contains('folder-preselected')){
-                    preselectedFolder.classList.remove('folder-preselected');
-                    preselectedFolder = null;
-                }
-            };
-        }*/
 
         async function runMosaicTransition(){
             display(mosaic, 'grid');
@@ -466,6 +423,7 @@
         const loop = new Audio('SFX/Interactive_Terminal_BG_Loop.ogg');
         loop.volume = 0;
         loop.loop = true;
+
 
         (async () => {
             
@@ -494,7 +452,12 @@
             //3
             display(menu, 'grid');
             //3
-            
         })();
+
     </script>
+
+
+    
+</body>
+
 </html>

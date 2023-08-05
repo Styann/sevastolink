@@ -94,6 +94,11 @@ html{
     color: var(--code);
 }
 
+.disabled-focus{
+    outline: none;
+}
+
+
 
 .loading-page {
     height: 100%;

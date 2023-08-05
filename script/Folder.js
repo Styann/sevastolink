@@ -1,5 +1,6 @@
 export class Folder{
     element;
+    fileListElement;
     files;
     currentFile;
     isSelected;
@@ -7,9 +8,10 @@ export class Folder{
     selectAudio;
     preselectAudio;
 
-    constructor(element, files){
+    constructor(element, files, fileListElement){
         this.element = element;
         this.files = files;
+        this.fileListElement = fileListElement;
         this.isSelected = false;
         this.currentFile = files[0];
         this.selectAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
@@ -19,12 +21,26 @@ export class Folder{
     }
     
     setupFiles(){
+        this.fileListElement.textContent = '';
+
+        
         for(let i = 0; i<this.files.length; i++){
-            this.files[i].setup();
+            this.fileListElement.appendChild(this.files[i].element);
         }
+        
+        if(this.files.length == 1){
+            this.fileListElement.appendChild(this.createEmptySlot());          
+        }
+
     }
 
-    addFile(file){
+    createEmptySlot(){
+        let div = document.createElement('div');
+        div.classList.add('file');
+        return div;
+    }
+
+    addArchiveLog(file){
         this.files.push(file);
     }
 
