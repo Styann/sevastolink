@@ -54,14 +54,14 @@
     grid-area: 1 / 1 / 6 / 2; 
 
     display: grid;
-    grid-template-columns: 260px;
+    grid-template-columns: 20px 220px 20px;
     grid-template-rows: repeat(5, 130px);
     grid-row-gap: 5px;  
     
 }
 
 .folders-label { 
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
     align-items: flex-end;
     padding: 6px;
@@ -83,10 +83,10 @@
     margin-top: 28.5px;
 }
 
-.step1{ height: 65px; }
-.step2{ height: 199px; }
-.step3{ height: 333px; }
-.step4{ height: 467px; }
+.step1{ height: 170px; }
+.step2{ height: 305px; }
+.step3{ height: 440px; }
+.step4{ height: 575px; }
 
 
 .div3 {

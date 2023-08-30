@@ -10,6 +10,11 @@ function animationState(element, bool){
     element.style.animationPlayState = (bool == true) ? 'running' : 'paused';
 }
 
+function get(id,className){
+    if(id) return document.getElementById(id);
+    else return document.getElementsByClassName(className)[0];
+}
+
 
 function loadFile(filePath) {
     var result = null;

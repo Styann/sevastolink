@@ -189,13 +189,10 @@
         <div class="tile-wrapper"><div class="tile"></div></div>
         <div class="tile-wrapper"><div class="tile"></div></div>
     </div>
-    
-
-
 
     <div id="sign-in" class="sign-in-background">
             <div class="sign-in">
-                <label class="retro-black">SIGN&nbsp;&nbsp;&nbsp;IN</label>
+                <label class="sign-in-label retro-black">SIGN&nbsp;&nbsp;&nbsp;IN</label>
             </div>
     </div>
 
@@ -226,41 +223,42 @@
 
         <div class="parent">
 
-            
             <div class="folders">
-                
-
                 <div class="folders-label">
                     <label class="retro-green fz30">FOLDERS</label>
                 </div>
+         
+                <div class="plb"></div>
                 <div id="personal" class="folder personal">
                     <label class="retro">PERSONAL</label>
                 </div>
+                <div class="prb right-border-preselected"></div>
+
+                <div class="slb"></div>
                 <div id="shared" class="folder shared">
                     <label class="retro">SHARED</label>
                 </div>
+                <div class="srb"></div>
+          
+                <div class="alb"></div>
                 <div id="audio" class="folder audio">
                     <label class="retro">AUDIO</label>
-                </div>
+                </div>            
+                <div class="arb"></div>
+
+                <div class="ulb"></div>
                 <div id="utility" class="folder utility">
                     <label class="retro">UTILITY</label>
                 </div>
+                <div class="urb"></div>       
             </div>
 
             <div class="div2">
-                <div class="angle step3"></div> 
+                <div id="file-pointer" class="angle step4"></div> 
             </div>
             
             <div class="div3">
-                <div id="archive-log-list" class="archive-log-list">
-
-                    <!--<div class="file-wrapper">
-                        <div class="file-selector"></div>
-                        <div class="file">
-                            <label class="retro-white file-label">TEST</label>
-                        </div>
-                    </div>-->
-                </div>
+                <div id="archive-log-list" class="archive-log-list"></div>
 
                 <div tabindex="0" id="archive-log-content" class="archive-log-content retro-white fz30 disabled-focus">
                     <p></p>
@@ -306,10 +304,10 @@
         const fileContent = document.getElementById('archive-log-content');
         const archiveLogList = document.getElementById('archive-log-list');     
 
-        const personalFolder = new Folder(document.getElementById('personal'), [], archiveLogList);
-        const sharedFolder = new Folder(document.getElementById('shared'), [], archiveLogList);
-        const audioFolder = new Folder(document.getElementById('audio'), [], archiveLogList);
-        const utilityFolder = new Folder(document.getElementById('utility'), [], archiveLogList);
+        const personalFolder = new Folder(document.getElementById('personal'), [], archiveLogList, [get(0,'plb'), get(0, 'prb')]);
+        const sharedFolder = new Folder(document.getElementById('shared'), [], archiveLogList, [get(0,'slb'), get(0, 'srb')]);
+        const audioFolder = new Folder(document.getElementById('audio'), [], archiveLogList, [get(0,'alb'), get(0, 'arb')]);
+        const utilityFolder = new Folder(document.getElementById('utility'), [], archiveLogList, [get(0,'ulb'), get(0, 'urb')]);
 
         let archiveLogJSON = null;
         const archiveLogsJSON = JSON.parse(loadFile('./script/archiveLogs.json'));
@@ -340,10 +338,18 @@
 
 
     
-        const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder]);
+        const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder], get('file-pointer'));
 
+        async function runMosaicTransition(){
+            display(mosaic, 'grid');
+            for(let i=0; i<170; i++){
+                children[i].firstChild.style.animationPlayState = 'running';
+            }
+            await delay(200);
+            display(mosaic, 'none');
+        }
 
-        document.addEventListener('keydown', (pressedKey) => {
+        document.addEventListener('keydown', async (pressedKey) => {
 
             if(pressedKey.repeat){
 
@@ -395,6 +401,8 @@
                                 root.currentFolder.currentFile.unselect();
                             }else{
                                 //return to sign in
+                                display(menu, 'none');
+                                await runMosaicTransition();
                                 location.reload();
                             }
                             break;
@@ -404,14 +412,7 @@
             }
         });
 
-        async function runMosaicTransition(){
-            display(mosaic, 'grid');
-            for(let i=0; i<170; i++){
-                children[i].firstChild.style.animationPlayState = 'running';
-            }
-            await delay(200);
-            display(mosaic, 'none');
-        }
+ 
 
         /*preselect folder -> TELEM 4
             select folder -> telem 1.2

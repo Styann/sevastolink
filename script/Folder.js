@@ -8,7 +8,9 @@ export class Folder{
     selectAudio;
     preselectAudio;
 
-    constructor(element, files, fileListElement){
+    borders;
+
+    constructor(element, files, fileListElement, borders){
         this.element = element;
         this.files = files;
         this.fileListElement = fileListElement;
@@ -18,6 +20,8 @@ export class Folder{
         this.preselectAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg');
         this.selectAudio.volume = 0.4;
         this.preselectAudio.volume = 0.3;
+
+        this.borders = borders;
     }
     
     setupFiles(){
@@ -44,9 +48,20 @@ export class Folder{
         this.files.push(file);
     }
 
+    #toggleBorders(turnon = true){
+        for(let border of this.borders){
+            if(turnon){
+                border.classList.add('border-selected');
+            }else{
+                border.classList.remove('border-selected');
+            }
+        } 
+    }
+
     select(){
         this.isSelected = true;
         this.element.classList.add('folder-selected');
+        this.#toggleBorders();
         if(!this.currentFile){
             this.currentFile = this.files[0];
         }
@@ -58,16 +73,19 @@ export class Folder{
         this.isSelected = false;
         if(front){
             this.element.classList.remove('folder-selected');
+            this.#toggleBorders(false);
         }
     }
 
     preselect(){
         this.element.classList.add('folder-preselected');
+        this.borders[1].classList.add('right-border-preselected');
         this.preselectAudio.play();
     }
 
     unpreselect(){
         this.element.classList.remove('folder-preselected');
+        this.borders[1].classList.remove('right-border-preselected');
     }
 
     getAboveFile(){

@@ -1,9 +1,12 @@
 export class Root{
+    filePointer;
     folders;
     currentFolder;
 
-    constructor(folders){
+
+    constructor(folders, filePointer){
         this.folders = folders;
+        this.filePointer = filePointer;
         this.currentFolder = folders[0];
         this.#preselectFolder(this.currentFolder);
         this.currentFolder.setupFiles();
@@ -11,12 +14,12 @@ export class Root{
     }
 
     getAboveFolder(){
-        let index = this.folders.indexOf(this.currentFolder);
+        let index = this.#getCurrentFolderIndex();
         return (index != 0) ? this.folders[index-1] : this.folders[this.folders.length-1];
     }
     
     getBelowFolder(){
-        let index = this.folders.indexOf(this.currentFolder);
+        let index = this.#getCurrentFolderIndex();
         return (index != (this.folders.length-1)) ? this.folders[index+1] : this.folders[0];
     }
 
@@ -32,7 +35,19 @@ export class Root{
             this.currentFolder.unpreselect();
             this.currentFolder = folder;
             this.currentFolder.preselect();
+
+            let index = this.#getCurrentFolderIndex(); 
+            for(let i=1; i<=4; i++){
+                if(i == index) continue;
+                let className = 'step'+i;
+                this.filePointer.classList.remove(className);
+            }
+            this.filePointer.classList.add('step'+ (index+1));
         }
+    }
+
+    #getCurrentFolderIndex(){
+        return this.folders.indexOf(this.currentFolder);
     }
 
     preselectAboveFolder(){
@@ -42,5 +57,7 @@ export class Root{
     preselectBelowFolder(){
         this.#preselectFolder(this.getBelowFolder());
     }
+
+    
 
 }

@@ -13,7 +13,7 @@ export class ArchiveLog{
     constructor(id, title, content, element, contentElement, audio = null){
         this.id = id;
         this.title = title;
-        this.content = content;
+        this.content = content + '\n'.repeat(10);
         this.element = element;
         this.contentElement = contentElement;
 
@@ -54,6 +54,7 @@ export class ArchiveLog{
         this.contentElement.children[0].innerText = this.content;
         this.contentElement.style.display = 'grid';
         this.contentElement.focus();
+        this.contentElement.scrollTop = 0;
         this.selectAudio.play();
         this.element.scrollIntoView(false);
     }

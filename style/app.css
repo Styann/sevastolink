@@ -154,4 +154,13 @@ html{
     place-items: normal center;
     font-size:100px;
     font-weight: bold;
+
+}
+
+.sign-in-label{
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%, 50%{ opacity: 1; }
+    51%, 100%{ opacity: 0; }
 }
