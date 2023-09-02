@@ -1,39 +1,43 @@
+import { ArchiveLog } from "./ArchiveLog.js";
+
 export class Folder{
     element;
-    fileListElement;
     files;
     currentFile;
+    previousFile;
     isSelected;
     isEnable;
-    selectAudio;
-    preselectAudio;
-
+    
     borders;
+    
+    static fileListElement = document.getElementById('archive-log-list');
+    static selectAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
+    static preselectAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg');
+    static unspecifiedDay = [11, 24, 25, 60, 89, 90, 115, 139];
 
-    constructor(element, files, fileListElement, borders){
+    static{
+        Folder.selectAudio.volume = 0.4;
+        Folder.preselectAudio.volume = 0.3;
+    }
+
+    constructor(element, borders){
         this.element = element;
-        this.files = files;
-        this.fileListElement = fileListElement;
+        this.files = [];
         this.isSelected = false;
-        this.currentFile = files[0];
-        this.selectAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
-        this.preselectAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg');
-        this.selectAudio.volume = 0.4;
-        this.preselectAudio.volume = 0.3;
-
+        this.currentFile = this.files[0];
         this.borders = borders;
     }
     
     setupFiles(){
-        this.fileListElement.textContent = '';
+        Folder.fileListElement.textContent = '';
 
         
         for(let i = 0; i<this.files.length; i++){
-            this.fileListElement.appendChild(this.files[i].element);
+            Folder.fileListElement.appendChild(this.files[i].element);
         }
         
         if(this.files.length == 1){
-            this.fileListElement.appendChild(this.createEmptySlot());          
+            Folder.fileListElement.appendChild(this.createEmptySlot());          
         }
 
     }
@@ -44,8 +48,18 @@ export class Folder{
         return div;
     }
 
-    addArchiveLog(file){
-        this.files.push(file);
+    addArchiveLogs(logsJSON){
+        var log;
+        var audio;
+        for(let i = 0; i<logsJSON.length; i++){
+            log = logsJSON[i];
+            audio = log['audio'];
+            if(audio.length == 0){
+                this.files.push(new ArchiveLog(log['id'], log['title'], log['content']));
+            }else{
+                this.files.push(new ArchiveLog(log['id'], log['title'], log['content'], audio));
+            }
+        }
     }
 
     #toggleBorders(turnon = true){
@@ -66,7 +80,7 @@ export class Folder{
             this.currentFile = this.files[0];
         }
 
-        this.selectAudio.play();
+        Folder.selectAudio.play();
     }
 
     unselect(front = true){
@@ -80,7 +94,7 @@ export class Folder{
     preselect(){
         this.element.classList.add('folder-preselected');
         this.borders[1].classList.add('right-border-preselected');
-        this.preselectAudio.play();
+        Folder.preselectAudio.play();
     }
 
     unpreselect(){
@@ -101,6 +115,7 @@ export class Folder{
     #selectFile(file){
         if(file){
             this.currentFile.unselect();
+            this.previousFile = this.currentFile;
             this.currentFile = file;
             this.currentFile.select();
         }else{

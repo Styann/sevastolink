@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <div id="mosaic" class="mosaic"> 
+    <!--<div id="mosaic" class="mosaic"> 
         <div class="tile-wrapper"><div class="tile"></div></div>
         <div class="tile-wrapper"><div class="tile"></div></div>
         <div class="tile-wrapper"><div class="tile"></div></div>
@@ -188,7 +188,12 @@
         <div class="tile-wrapper"><div class="tile"></div></div>
         <div class="tile-wrapper"><div class="tile"></div></div>
         <div class="tile-wrapper"><div class="tile"></div></div>
-    </div>
+    </div>-->
+
+    <table id="mosaic" class="mosaic">
+        <tr><td></td></tr>
+    </table>
+
 
     <div id="sign-in" class="sign-in-background">
             <div class="sign-in">
@@ -275,7 +280,6 @@
         import {Folder} from './script/Folder.js';
         import {ArchiveLog} from './script/ArchiveLog.js';
 
-
         const signin = document.getElementById('sign-in');
         
         const mosaic = document.getElementById('mosaic');
@@ -298,44 +302,20 @@
             "page-down" : 34
         };
 
-        const files = document.getElementsByClassName('file');
-        const file1 = document.getElementById('file1');
-        const file2 = document.getElementById('file2');
+
         const fileContent = document.getElementById('archive-log-content');
         const archiveLogList = document.getElementById('archive-log-list');     
 
-        const personalFolder = new Folder(document.getElementById('personal'), [], archiveLogList, [get(0,'plb'), get(0, 'prb')]);
-        const sharedFolder = new Folder(document.getElementById('shared'), [], archiveLogList, [get(0,'slb'), get(0, 'srb')]);
-        const audioFolder = new Folder(document.getElementById('audio'), [], archiveLogList, [get(0,'alb'), get(0, 'arb')]);
-        const utilityFolder = new Folder(document.getElementById('utility'), [], archiveLogList, [get(0,'ulb'), get(0, 'urb')]);
+        const personalFolder = new Folder(document.getElementById('personal'), [get(0,'plb'), get(0, 'prb')]);
+        const sharedFolder = new Folder(document.getElementById('shared'), [get(0,'slb'), get(0, 'srb')]);
+        const audioFolder = new Folder(document.getElementById('audio'), [get(0,'alb'), get(0, 'arb')]);
+        const utilityFolder = new Folder(document.getElementById('utility'), [get(0,'ulb'), get(0, 'urb')]);
 
-        let archiveLogJSON = null;
-        const archiveLogsJSON = JSON.parse(loadFile('./script/archiveLogs.json'));
-        for(let i = 0; i<6; i++){
-            archiveLogJSON = archiveLogsJSON['files'][i];
-            personalFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], null, fileContent));
-        }
-
-        for(let i = 2; i<4; i++){
-            archiveLogJSON = archiveLogsJSON['files'][i];
-            var file = (i==2) ? file1 : file2;
-            sharedFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
-        }
-
-        for(let i = 6; i<8; i++){
-            archiveLogJSON = archiveLogsJSON['files'][i];
-            var file = (i==6) ? file1 : file2;
-            utilityFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file, fileContent));
-        }
-
-
-        for(let i = 0; i<151; i++){
-            archiveLogJSON = archiveLogsJSON['files'][i];
-            if(archiveLogJSON["audio"] !== ""){
-                audioFolder.addArchiveLog(new ArchiveLog(archiveLogJSON['id'], archiveLogJSON['title'], archiveLogJSON['content'], file1, fileContent, archiveLogJSON["audio"]));
-            }
-        }
-
+        var archiveLogsJSON = await loadJSON('./script/archiveLogs.json');
+        personalFolder.addArchiveLogs(archiveLogsJSON['personal']);
+        sharedFolder.addArchiveLogs(archiveLogsJSON['shared'])
+        audioFolder.addArchiveLogs(archiveLogsJSON['audio']);
+        utilityFolder.addArchiveLogs(archiveLogsJSON['nostromo']);
 
     
         const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder], get('file-pointer'));
@@ -388,6 +368,10 @@
                             }else{
                                 //trying to select a file with no success
                                 if(root.currentFolder.currentFile.audio){
+                                    //a changer
+                                    if(root.currentFolder.previousFile){
+                                        root.currentFolder.previousFile.stop();
+                                    }
                                     root.currentFolder.currentFile.audio.play();
                                 }else{
                                     root.currentFolder.currentFile.bip();
@@ -429,7 +413,7 @@
         (async () => {
             
             //1
-            /*await waitForKey(undefined, true);
+            await waitForKey(undefined, true);
             display(signin, 'none');
             loop.play();
 
@@ -448,7 +432,7 @@
             display(loadingPage, 'none');
             //2
         
-            await runMosaicTransition();*/
+            await runMosaicTransition();
             
             //3
             display(menu, 'grid');

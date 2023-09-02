@@ -16,16 +16,12 @@ function get(id,className){
 }
 
 
-function loadFile(filePath) {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filePath, false);
-    xmlhttp.send();
-    if (xmlhttp.status==200) {
-        result = xmlhttp.responseText;
-    }
-    return result;
+async function loadJSON(filePath) {
+    const response = await fetch(filePath);
+    return response.json();
 }
+
+
 
 function htmlToElement(html) {
     var template = document.createElement('template');

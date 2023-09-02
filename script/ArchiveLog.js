@@ -3,25 +3,27 @@ export class ArchiveLog{
     title;
     content;
     element;
-    contentElement;
     isSelected;
-    
     audio;
-    unableAudio;
-    selectAudio;
+
+    static contentElement = document.getElementById('archive-log-content');
+    static selectAudio;
+    static unableAudio;
     
-    constructor(id, title, content, element, contentElement, audio = null){
+    static{
+        var path = 'SFX/Interactive_Terminal_Telem_0';
+
+        ArchiveLog.selectAudio = new Audio(path+'6.ogg');
+        ArchiveLog.selectAudio.volume = 0.2;
+        
+        ArchiveLog.unableAudio = [new Audio(path+'3.ogg'), new Audio(path+'6.ogg'), new Audio(path+'7.ogg')];
+        for(let i=0; i<3; i++) ArchiveLog.unableAudio[i].volume = 0.2;
+    }
+
+    constructor(id, title, content, audio = null){
         this.id = id;
         this.title = title;
         this.content = content + '\n'.repeat(10);
-        this.element = element;
-        this.contentElement = contentElement;
-
-        let path = 'SFX/Interactive_Terminal_Telem_0';
-        this.unableAudio = [new Audio(path+'3.ogg'), new Audio(path+'6.ogg'), new Audio(path+'7.ogg')];
-        for(let i=0; i<3; i++) this.unableAudio[i].volume = 0.2;
-        this.selectAudio = new Audio(path+'6.ogg');
-        this.selectAudio.volume = 0.2;
 
         if(audio){
             this.audio = new Audio('SFX/Voices/'+audio);
@@ -33,6 +35,15 @@ export class ArchiveLog{
 
     play(){
         this.audio.play();
+    }
+
+    stop(){
+        if(this.audio){
+            if(!this.audio.ended){
+                this.audio.pause();
+                this.audio.currentTime = 0;
+            }
+        } 
     }
 
     setup(){
@@ -51,11 +62,11 @@ export class ArchiveLog{
         this.isSelected = true;
         this.element.children[0].classList.add('vline-selected');
         this.element.children[1].classList.add('archive-log-selected');
-        this.contentElement.children[0].innerText = this.content;
-        this.contentElement.style.display = 'grid';
-        this.contentElement.focus();
-        this.contentElement.scrollTop = 0;
-        this.selectAudio.play();
+        ArchiveLog.contentElement.children[0].innerText = this.content;
+        ArchiveLog.contentElement.style.display = 'grid';
+        ArchiveLog.contentElement.focus();
+        ArchiveLog.contentElement.scrollTop = 0;
+        ArchiveLog.selectAudio.play();
         this.element.scrollIntoView(false);
     }
 
@@ -63,11 +74,23 @@ export class ArchiveLog{
         this.isSelected = false;
         this.element.children[0].classList.remove('vline-selected');
         this.element.children[1].classList.remove('archive-log-selected');
-        this.contentElement.style.display = 'none';
+        ArchiveLog.contentElement.style.display = 'none';
     }
 
     bip(){
-        this.unableAudio[getRandomInt(3)].play();
+        ArchiveLog.unableAudio[getRandomInt(3)].play();
+    }
+
+    #getIdToString(){
+        let str = '#';
+
+        if(this.id < 10){
+            str += '00';
+        }else if(this.id < 100 && this.id > 9){
+            str += '0';
+        }
+
+        return str+this.id;
     }
 
     #createElement(){
@@ -77,10 +100,15 @@ export class ArchiveLog{
         let div = document.createElement('div');
         div.classList.add('archive-log');
 
+        let idLabel = document.createElement('label');
+        idLabel.classList.add('archive-log-id-label', 'retro-orange');
+        idLabel.appendChild(document.createTextNode(this.#getIdToString()));
+
         let fileLabel = document.createElement('label');
         fileLabel.classList.add('archive-log-label', 'retro-white');
-        fileLabel.textContent = this.title;
+        fileLabel.appendChild(document.createTextNode(this.title));
         
+        div.appendChild(idLabel);
         div.appendChild(fileLabel);
         
         if(this.audio){

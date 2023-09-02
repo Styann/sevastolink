@@ -19,7 +19,7 @@
     height: 54px;
 
     display: grid;
-    grid-template-columns: 80% auto 40px;
+    grid-template-columns: 8% auto 40px;
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
@@ -30,15 +30,24 @@
     border: solid 3px white;
 }
 
-.archive-log-label{
+.archive-log-id-label{
     font-size: 35px;
-    text-transform: uppercase;
-
     grid-area: 1 / 1 / 2 / 2;
     padding-left: 10px;
     display: grid;
     place-items: center start;
 }
+
+
+.archive-log-label{
+    font-size: 35px;
+    text-transform: uppercase;
+
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    place-items: center start;
+}
+
 
 .archive-log-content{
     display: none;
@@ -50,6 +59,10 @@
     scrollbar-width: none;
     padding: 6px;
     margin-left: 25px;
+}
+
+.archive-log-content p{
+    margin: 5px 0px;
 }
 
 

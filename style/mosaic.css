@@ -42,3 +42,13 @@
     50%{ height: 15%; }
     to{ height: 0%; }
 }
+
+.table-board{
+    border-collapse: collapse;
+    background-color:var(--background);
+}
+
+
+.table-board td{
+    background-color: var(--foreground);
+}

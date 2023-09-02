@@ -1,910 +1,1305 @@
 {
-    "files":[
+    "personal":[
         {
             "id":1,
-            "title":"Just Missed You",
-            "content":"Verlaine, you on the lookout for a navigational officer? I have a friend that's just lost his ship and he's looking for work. I can vouch for him, he's got good papers.\n\nSame old story — the megacorps undercut him, picked up all his clients. Contracts are getting harder to come by for the smaller companies and I'm thinking of getting out myself while I still have something to sell. Sounds like you're doing okay though. Dropped by the docks and heard you just shipped out. Sevastopol Station — what a shithole. Still, I hear Weyland-Yutani pay well. Good luck to you — if you can't beat them, right? Let's catch up when you get back.\n\nBlane. ",
-			"audio":""
-		},
+            "title": "Just Missed You",
+            "author":"Blane",
+            "date":"November 15, 2137 00:00:00",
+            "content":"Verlaine, you on the lookout for a navigational officer? I have a friend that's just lost his ship and he's looking for work. I can vouch for him, he's got good papers.\n\nSame old story — the megacorps undercut him, picked up all his clients. Contracts are getting harder to come by for the smaller companies and I'm thinking of getting out myself while I still have something to sell. Sounds like you're doing okay though. Dropped by the docks and heard you just shipped out. Sevastopol Station — what a shithole. Still, I hear Weyland-Yutani pay well. Good luck to you — if you can't beat them, right? Let's catch up when you get back.\n\nBlane.",
+            "audio":""
+        },
         {
             "id":2,
-            "title":"RE: Nostromo Incident",
+            "title": "RE: Nostromo Incident",
+            "author":"Saul",
+            "date":"November 13, 2137 00:00:00",
             "content":"To N. Taylor\nRE: Nostromo incident, Weyland-Yutani file #DS9398476\n\nHey, Taylor, I got your case request. It may take me a while to dig out the files and the incident happened before my time at the company, so I'm a bit fuzzy on the details.\n\nIn 2122, the Weyland-Yutani cargo vessel the USCSS Nostromo went missing. No trace was found of its cargo or crew. Apart from a new science officer, the rest of the crew had worked together before, seven in all:\n\n    Dallas — Captain\n    Ash — Science Officer\n    Kane — Executive Officer.\n    Ripley — Warrant Officer\n    Lambert — Navigation Officer\n    Parker — Chief Engineer\n    Brett — Engineer Technician\n\nWeyland-Yutani lost a lot of money from it, it's a bit of a black mark in the history. Get the impression they don't like to mention it. Anyway, I'll try to find the files later, clarify some of the points. If you want I can help you go through them? Maybe some of your luck will rub off on me, I hear upstairs have an eye on you for something big.\n\nSaul.",
-			"audio":""
-		},
-        {
-            "id":3,
-            "title":"Torrens Manifest",
-            "content":"Name: MSV-7750 Torrens M-class starship\n\nCaptain: Verlaine, Diane\nNavigator/Comm Officer: Connor, William\n\nOwner: Verlaine, Diane\nContractor: Weyland-Yutani\n\nOutbound and return transportation for Weyland-Yutani retrieval team to Sevastopol station.\nTeam consists of three W-Y employees: Samuels, C, Ripley, A, Taylor, N.\n\nPassengers: Samuels, Christopher. Ripley, Amanda. Taylor, Nina.\nNumber of decks — Two\nNumber of crew — Two\n\nInterstellar communications antenna. Long haul hypersleep chamber. Commercial passenger/cargo ships retrofitted from a tow rig. Retains operational heavy duty tow umbilical. ",
-			"audio":""
-		},
-        {
-            "id":4,
-            "title":"Decommissioning",
-            "content":"To engineering team\nRE: Decommission\nSo boys and girls, you've probably heard the whispers about Sevastopol by now and I can confirm it's official. Sevastopol is being decommissioned.\n\nI will go over with each of you what this means in regards to your contracts and next placement, but for now we still have a job to do. The suits want this done with a skeleton crew, which means we'll only be getting a few outside contractors to help, but it does mean overtime. I recommend taking what you can while it's available.\n\nI should point out that the decommission does not mean \"lucky dip\". Everything here has to be accounted for and I will personally escort anyone found helping themselves to equipment to Marshal Waits.\n\nChief ",
-			"audio":""
-		},
+            "audio":""
+        },
         {
             "id":5,
-            "title":"Moved Our Stash",
-            "content":"Langley, if you're looking for our stash, I've moved it. You left it right out in the open where anyone could have taken it! Jesus, do you know what I had to do to get it? I've hidden it in one of the storerooms — you should be able to find it. The code is 0340. Don't worry, no one goes down to the terminal anymore. Not after what happened.\n\nAlso, we're out of meds and low on water so you're going to need to get some — it's your turn. Maybe it'll teach you to take care of our stuff in future.\n\nAnna ",
-			"audio":""
-		},
-        {
-            "id":6,
-            "title":"Goodbye from Seegson",
-            "content":"We've had a long journey together but sadly it's coming to an end. Seegson Corp would like to take this opportunity to thank all of you who worked and lived at Sevastopol over the years, and hopes that Seegson has helped to make it a productive and rewarding environment. Our investment and belief in the station has never wavered.\n\nBe assured that Seegson's APOLLO central A.I and \"Working Joe\" androids will be there to serve Sevastopol until the last rivet is removed. We wish you all the very best for the future. After all, Sevastopol isn't just a station. It's people.\n\nSeegson Corp. ",
-			"audio":""
-		},
-        {
-            "id":7,
-            "title":"Kill the Power",
-            "content":"Harris? Turner? Get back here now. We have a track, somewhere in engineering. Lock the terminal down, kill the power, and don't forget your reports. Make them thorough. We're going to need our paperwork to be bulletproof when this shit is over. Waits out.\"\n\n\n008. Terminal Riot (Julia Jones, Dec 2, 2137)\n\"Julia Jones. Today's update. After numerous demands, Marshal Waits finally called a public meeting to address the rumors that have been circulating on Sevastopol. But instead of the answers we wanted, he continued to be evasive and after only a few minutes he and his team were pelted by projectiles from an angry crowd. A gun was fired, there was panic and now Waits and what's left of his team are forcibly ejecting us from the terminal. Feels like we're on our own now.\"\n\n\n009. Pulling the Plug (Harper, Sep 22, 2137)\nZoe, I'm sorry, but I won't need you to come in next week.\n\nAs you know, the store's been in trouble for some time now and I couldn't hold off the creditors any longer. There's just no one coming to Sevastopol anymore.\n\nIt's not just us either — it sounds like the whole station is in the red and they're pulling the plug. Going to sell it off for scrap, I guess. I was speaking to one of the engineers and he reckons they'll announce it soon. I'm telling you this so you don't stick around looking for another job. Sevastopol's finished, time to move on.\n\nHarper ",
-			"audio":"AI_UI_WAI_4626.ogg"
-		},
-        {
-            "id":8,
-            "title":"Terminal Riot",
-            "content":"Julia Jones. Today's update. After numerous demands, Marshal Waits finally called a public meeting to address the rumors that have been circulating on Sevastopol. But instead of the answers we wanted, he continued to be evasive and after only a few minutes he and his team were pelted by projectiles from an angry crowd. A gun was fired, there was panic and now Waits and what's left of his team are forcibly ejecting us from the terminal. Feels like we're on our own now." ,
-			"audio":""
-		},
+            "title": "Moved Our Stash",
+            "author":"Anna",
+            "date":"December 4, 2137 00:00:00",
+            "content":"Langley, if you're looking for our stash, I've moved it. You left it right out in the open where anyone could have taken it! Jesus, do you know what I had to do to get it? I've hidden it in one of the storerooms — you should be able to find it. The code is 0340. Don't worry, no one goes down to the terminal anymore. Not after what happened.\n\nAlso, we're out of meds and low on water so you're going to need to get some — it's your turn. Maybe it'll teach you to take care of our stuff in future.\n\nAnna",
+            "audio":""
+        },
         {
             "id":9,
-            "title":"Pulling the Plug",
-            "content":"Zoe, I'm sorry, but I won't need you to come in next week.\n\nAs you know, the store's been in trouble for some time now and I couldn't hold off the creditors any longer. There's just no one coming to Sevastopol anymore.\n\nIt's not just us either — it sounds like the whole station is in the red and they're pulling the plug. Going to sell it off for scrap, I guess. I was speaking to one of the engineers and he reckons they'll announce it soon. I'm telling you this so you don't stick around looking for another job. Sevastopol's finished, time to move on.\n\nHarper ",
-			"audio":""
-		},
-        {
-            "id":10,
-            "title":"To All Spaceflight Employees",
-            "content":"To all Spaceflight Terminal employees: In the interest of public safety and the prevention of panic, it must be made clear to all potential passengers that there are currently no scheduled flights leaving Sevastopol, nor ships available.\n\nThe Colonial Marshals are investigating problems on-station and will update accordingly.\n\nFrom the office of Marshal Waits. ",
-			"audio":""
-		},
-        {
-            "id":11,
-            "title":"What Is APOLLO?",
-            "content":"What is APOLLO? APOLLO is the central A.I that monitors and provides guidance for all the Seegson \"Working Joes\" on Sevastopol. APOLLO also oversees all communications on the station. So wherever you are, you know you're in safe hands.\n\nSeegson, tomorrow, together. ",
-			"audio":""
-		},
-        {
-            "id":12,
-            "title":"Last Power Coupling",
-            "content":"Harris? This is Turner. I found the last power coupling. Took me a while, but it's shut off now. Just fitting the last security brace. Come find me when you've shut yours down. Then we can get the hell out of here. Jesus, man... I'm hearing noises everywhere. Every creak and... Just hurry the fuck up, will you?",
-			"audio":""
-		},
-        {
-            "id":13,
-            "title":"Another Break-In",
-            "content":"Harris? It's Turner. I had to deal with that wasted asshole again. This time he nearly wrecked the door with a Maintenance Jack. Guess he figures it's safe here, wants to lock himself in. Screw him. We've got too much to worry about without babysitting drunks. Anyway, I threw him in the evidence lock-up. Let the son of a bitch sleep it off." ,
-			"audio":""
-		},
-        {
-            "id":14,
-            "title":"Dead Soldiers",
-            "content":"Hello? I wanna make a complaint. To the... highest authority, okay? My name is Zachary Watson. That's Watson, you get that? My complaint is this: The fucking Marshals. They should be protecting us, it's their job! Something's on the station with us and no one knows what it is, no one fucking knows! They put braces on the doors — lockdown. You know, like to keep something out! I'm fucking terrified, man. I'm fucking... Shit, it's so cold. I don't think this fucking thing even works." ,
-			"audio":""
-		},
-        {
-            "id":15,
-            "title":"Interview:",
-            "content":"Interview subject: Heyst. Did I say that right? Heyst? Look, if you can't even tell me your name we're going to be here a hell of a long time. I just want to know about your boss. He's got you into a lot of trouble. Someone's got to be accountable. I'm gonna make damn sure someone's accountable. No? Tough guy, eh? Turner, turn off the tape. Maybe our friend here is just shy." ,
-			"audio":""
-		},
+            "title": "Pulling the Plug",
+            "author":"Harper",
+            "date":"September 22, 2137 00:00:00",
+            "content":"Zoe, I'm sorry, but I won't need you to come in next week.\n\nAs you know, the store's been in trouble for some time now and I couldn't hold off the creditors any longer. There's just no one coming to Sevastopol anymore.\n\nIt's not just us either — it sounds like the whole station is in the red and they're pulling the plug. Going to sell it off for scrap, I guess. I was speaking to one of the engineers and he reckons they'll announce it soon. I'm telling you this so you don't stick around looking for another job. Sevastopol's finished, time to move on.\n\nHarper",
+            "audio":""
+        },
         {
             "id":16,
-            "title":"A Blind Eye",
-            "content":"S — I managed to get my hands on that stuff I was talking about. Chief won't even notice the stock missing; things always get lost when a station's closing down. Don't worry about customers either, Sinclair's told his men to turn a blind eye. They'd probably be too busy goofing off or taking backhanders to notice anyway — you get what you pay for, I guess.\n\nBailey. ",
-			"audio":""
-		},
+            "title": "A Blind Eye",
+            "author":"Bailey",
+            "date":"October 19, 2137 00:00:00",
+            "content":"S — I managed to get my hands on that stuff I was talking about. Chief won't even notice the stock missing; things always get lost when a station's closing down. Don't worry about customers either, Sinclair's told his men to turn a blind eye. They'd probably be too busy goofing off or taking backhanders to notice anyway — you get what you pay for, I guess.\n\nBailey.",
+            "audio":""
+        },
         {
             "id":17,
-            "title":"Two-Man Rule",
-            "content":"Nearson, Leonard, you're both first shift on the door so read carefully. Putting this together wasn't easy and we don't want intruders getting in because you didn't read the instructions properly.\n\nThis here is what you call a two-man rule lock. This means it needs two to open the door simultaneously from two different consoles. Most of us don't know each other, so this is the safest way of making sure everything stays secure and none of us decide to head off on their own with our stuff. When you're on shift, take it in turns to keep guard and notify the other if one of us needs to be let in or out.\n\nThat means just us, no one else. No matter how much anyone begs and no matter what sob story they try and pull. I was with a group before and we got soft and now I'm the only one left. Trust no one.\n\nJoe ",
-			"audio":""
-		},
-        {
-            "id":18,
-            "title":"Inventory",
-            "content":"Inventory — No one is to take anything or mark it off the list without talking to me first!!!\n\nAspirin — X4\nCanned food — 32\nCereals — 6 boxes\nWater — 4 gallons\nToothpaste — 12 tubes\nCigarettes — 3 cartons\nToilet paper — 26 rolls\nIndustrial tape — 6 rolls\nMed kits — 2\nPowdered milk — X 52\n\nNotes: Running low on ammunition. Zoe managed to pick up some prescription drugs, all addressed to the same person. Guess they didn't need them anymore. ",
-			"audio":""
-		},
-        {
-            "id":19,
-            "title":"Leave Work Now",
-            "content":"Marie, listen to me very carefully. I want you to leave work now, collect Claire, pick up the cat and head home. We need to find someplace safe until Seegson send a ship. I saw the guy from down the hall — can't remember his name, the one in the dirty baseball cap, weird smell — he had something in his coat, I think it was a gun. He just looked right through me. Don't talk to anyone. Don't tell them where you're going. I'll meet you as soon as I can." ,
-			"audio":""
-		},
+            "title": "Two-Man Rule",
+            "author":"Joe",
+            "date":"December 8, 2137 00:00:00",
+            "content":"Nearson, Leonard, you're both first shift on the door so read carefully. Putting this together wasn't easy and we don't want intruders getting in because you didn't read the instructions properly.\n\nThis here is what you call a two-man rule lock. This means it needs two to open the door simultaneously from two different consoles. Most of us don't know each other, so this is the safest way of making sure everything stays secure and none of us decide to head off on their own with our stuff. When you're on shift, take it in turns to keep guard and notify the other if one of us needs to be let in or out.\n\nThat means just us, no one else. No matter how much anyone begs and no matter what sob story they try and pull. I was with a group before and we got soft and now I'm the only one left. Trust no one.\n\nJoe",
+            "audio":""
+        },
         {
             "id":20,
-            "title":"Archives",
-            "content":"To W. 'Chief' Porter\nRE: Sevastopol terminals\n\nChief, the good news is that I'm about 80% through archiving Sevastopol's internal mail system for the decommissioning. It's been disconnected from APOLLO but I've left the basic messaging system in place for the people still here. The bad news is whoever set it up in the first place skimped on the hardware and we've had some leaks. I've got Mike Tanaka looking into it now — he's the specialist archivist we called in, seems to know his shit. Just thought I better give you the heads up in the meantime.\n\nFranco ",
-			"audio":""
-		},
-        {
-            "id":21,
-            "title":"An Outpost of Progress? #1",
-            "content":"Sevastopol: an outpost of progress?\nBy Julia Jones\n\nDesolation Through Isolation\n\nThe space station that nobody needed, run by a company we all forgot. Sevastopol is now a backwater. The population is a tenth of the station's optimal capacity. Docking bays are empty and the shutters are down on local stores and businesses. The orders for Seegson's cheaply manufactured androids have long since dried up, and the antiquated APOLLO governing AI system frequently malfunctions.\n\nHow did we get here and, more importantly, where have billions of dollars of investment gone? My name is Julia Jones. I have lived on Sevastopol for two months compiling this report for The Colonial Times, discovering the price our second-tier corporations have paid for their over-expansion during the race into the Outer Rim. ",
-			"audio":""
-		},
-        {
-            "id":22,
-            "title":"Empty Box",
-            "content":"\"Message for Marshal Waits. This is Chief Porter in Tech Support. Look, there's nothing on this flight recorder, Waits. We've broken God knows how many corporate confidentiality agreements and come up with zip — nothing except the Weyland-Yutani logo and an empty read-out. Now, these things are built to last, so either someone on board the Nostromo asked its mother core to wipe it clean, or somehow the data's been corrupted before it got here. Care to fill me in on why this was a priority job?\" ",
-			"audio":""
-		},
+            "title": "Archives",
+            "author":"Franco",
+            "date":"October 16, 2137 00:00:00",
+            "content":"To W. 'Chief' Porter\nRE: Sevastopol terminals\n\nChief, the good news is that I'm about 80% through archiving Sevastopol's internal mail system for the decommissioning. It's been disconnected from APOLLO but I've left the basic messaging system in place for the people still here. The bad news is whoever set it up in the first place skimped on the hardware and we've had some leaks. I've got Mike Tanaka looking into it now — he's the specialist archivist we called in, seems to know his shit. Just thought I better give you the heads up in the meantime.\n\nFranco",
+            "audio":""
+        },
         {
             "id":23,
-            "title":"Door Override",
-            "content":"Hughes, I've put a manual lock on the door leading upstairs. Don't want any accidents until we figure what's going on here.\n\nChief ",
-			"audio":""
-		},
-        {
-            "id":24,
-            "title":"Our Manifesto",
-            "content":"(First published in \"Eye on Seegson\", Feb 2115)\n\nWe don't want to show you a new world. We want to discover it with you. Here at Seegson, every new technology, research project and discovery is driven to find real world applications to help you.\n\nWe hope you'll join us for the journey. ",
-			"audio":""
-		},
-        {
-            "id":25,
-            "title":"Tomorrow, Together #1",
-            "content":"Together Tomorrow: Seegson's Journey into Colonial Space\nAn official history, by Sebastian Sieg (first printed in \"Eye on Seegson\")\n\nOur Origins in Space\n\n2034 changed everything. The advent of faster than light travel put Seegson (then known as Sieg and Son) on the path to success. The race into space began in earnest and, under the steady hand of our founder Josiah Sieg, our company was primed and ready for the years that followed.\n\nSieg and Son built the components that enabled ships to extend colonial space beyond the Sol system. As history relates, Weyland Corp was reluctant to share it's FTL technologies with other corporations. Fortunately, Josiah Sieg was on hand to speculate, innovate and produce.\n\nWithout Sieg and Son, the skies would have looked very different indeed! ",
-			"audio":""
-		},
-        {
-            "id":26,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":27,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":28,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Door Override",
+            "author":"Chief",
+            "date":"December 1, 2137 00:00:00",
+            "content":"Hughes, I've put a manual lock on the door leading upstairs. Don't want any accidents until we figure what's going on here.\n\nChief",
+            "audio":""
+        },
         {
             "id":29,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":30,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Your Logged Message",
+            "author":"APOLLO Datasearch",
+            "date":"November 25, 2137 00:00:00",
+            "content":"Sensitive corporate information has been automatically detected in a Sevastolink message recently sent from this terminal. This event has been logged by APOLLO on behalf of Seegson.\n\nIf you have any further questions please talk to your line manager or your nearest synthetic Seegson representative.",
+            "audio":""
+        },
         {
             "id":31,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":32,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":33,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":34,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Torrens Hail",
+            "author":"Verlaine",
+            "date":"December 11, 2137 00:00:00",
+            "content":"This is the commercial vessel Torrens out of Saint Clair, registration number MSV-7760, calling Sevastopol traffic control. We're carrying three passengers on a Weyland-Yutani bond. You're holding the Nostromo flight recorder unit. We request immediate permission to transfer the passengers port-side. Over.",
+            "audio":"AI_UI_VER_7193.ogg"
+        },
         {
             "id":35,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":36,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":37,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":38,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Low on Meds",
+            "author":"Morley",
+            "date":"October 7, 2137 00:00:00",
+            "content":"Dr. Lingard, we need more supplies of mood stimulants up here. We're getting really low, and it doesn't help that Kuhlman seems to be handing them out like candy. Logs show he's been to the dispensary sixteen times this week. We need to start rationing medication. Sevastopol's people are only going to need these more and more the closer we get to shutdown.\n\nCan you talk to Kuhlman? Find out where these prescriptions are going?",
+            "audio":""
+        },
         {
             "id":39,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":40,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":41,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "RE: Recovery Rooms",
+            "author":"Morley",
+            "date":"October 5, 2137 00:00:00",
+            "content":"I just found a patient who's been locked in a recovery room for days listening to that godawful bullshit about pretty sunrises and a wife back home frying bacon.\n\nWe have been requested to vacate the premises in readiness for the decommission but we have not been given leave to abandon our duty of care.\n\nDon't let this happen again.",
+            "audio":""
+        },
         {
             "id":42,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Urgent: Marshal Investigation",
+            "author":"Lingard",
+            "date":"November 14, 2137 00:00:00",
+            "content":"Frank.\n\nI need to talk to you. I've got a body up here that's part of a Marshal investigation — female, late thirties, chest wound.\n\nI have no idea how long Marshal Waits will want to keep her up here, but this is a highly sensitive situation. I am going to need your discretion, and I'll also need you to trust me on this one. Come see me in my office.\n\nLingard, senior medical officer",
+            "audio":""
+        },
         {
             "id":43,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Environmental Controls",
+            "author":"Lingard",
+            "date":"November 16, 2137 00:00:00",
+            "content":"Frank, your concern about San Cristobal's lockdown has been noted, but I assure you an evacuation is 100% necessary and only a temporary measure. My priority is the welfare of the living, while you seem to be more preoccupied with the dead.\n\nIf you're worried about power fluctuations, morgue temperature and the condition of the corpses just adjust the coolant delivery system. Just get out there ASAP.\n\nLingard.",
+            "audio":""
+        },
         {
             "id":44,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Dispensary Is Empty",
+            "author":"Morley",
+            "date":"November 15, 2137 00:00:00",
+            "content":"Message for Lingard on her return. I've prepped the patients in the trauma ward for transportation, as best I can, before Waits locks the place down. I'm going upstairs to the psychiatric ward to make sure there are no stragglers.\n\nThe dispensary is now empty. Everything San Cristobal has to offer in terms of first aid and medicine is with you, or elsewhere on-station. I'm hoping you'll bring back good news.\n\nMorley",
+            "audio":""
+        },
         {
             "id":45,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Colonial Marshal Directive",
+            "author":"Marshal Waits",
+            "date":"November 16, 2137 00:00:00",
+            "content":"Dr. Morley, I don't care what you think you need to do. I want you out of San Cristobal now.\n\nYou know what we've set up in there, and I'm truly sorry for what it means for the patients who can't be moved, but this is the only way.\n\nThere will be no further warnings.\n\nMarshal Waits",
+            "audio":""
+        },
         {
             "id":46,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":47,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":48,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Morley: Updates and Codes",
+            "author":"Lingard",
+            "date":"November 18, 2137 00:00:00",
+            "content":"Morley, I need you out of medical.\n\nWe've set up shop in the Habitation Tower. People are fighting over supplies. We've got more injuries coming in than we have the meds to deal with them, and my team is depleted to say the least. I don't know how you'll break the lockdown, but if you need to access San Crisobal's central wards I left a keycard in the security locker.\n\nThe code is 2505.\n\nLingard",
+            "audio":""
+        },
         {
             "id":49,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":50,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Autopsy Report",
+            "author":"Lingard",
+            "date":"November 14, 2137 00:00:00",
+            "content":"Name: Foster, Catherine\nCoroner's case# 11/14/2137\nD/O/B: 01/20/2098\n\nAge: 39\nSex: Female\nOrigin: Crew member of the Anesidora\n\nBody identified by: Marlow, H — Anesidora captain\n\nCase # 001794-26B-2137 Investigative agency: Sevastopol Colonial Marshal Authority\n\nEvidence of treatment:\nClassified\n\nExternal examination:\nClassified\n\nInternal examination:\nClassified\n\nLaboratory data:\nClassified\n\nEvidence collected:\nClassified\n\nOpinion:\nClassified",
+            "audio":""
+        },
         {
             "id":51,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Human Touch",
+            "author":"Barker",
+            "date":"November 8, 2137 00:00:00",
+            "content":"This is by way of a formal complaint to station medical. I do not want to be attended by an android... Any android. I am a senior Seegson executive with a significant financial investment in Sevastopol.\n\nI should be treated appropriately, by which I mean, by humans only.",
+            "audio":""
+        },
         {
             "id":52,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":53,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":54,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":55,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":56,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":57,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Duty Roster",
+            "author":"Lingard",
+            "date":"September 9, 2137 00:00:00",
+            "content":"Duty roster 09/09/2137\n\nLingard, senior medical consultant\nMorley, general medical practitioner\nKhulman, general medical practitioner\nWest, radiologist\nFernadez, dental surgeon",
+            "audio":""
+        },
         {
             "id":58,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Working Joe Spiel",
+            "author":"Smythe",
+            "date":"September 16, 2137 00:00:00",
+            "content":"Russel, Here's my spiel for the potential clients today. What do you think? Spedding will hang me out to dry if they don't bite.\n\n\"Welcome gentlemen! Welcome, to the buzzing heart of the 'Sevastopol Synthetic Solution'. Next up on your tour will be the Systech Spire and the APOLLO core itself, but first — an example of android self-governance. When APOLLO'S synthetics require a little more care than the repair wards can provide — they come here.\"\n\n\"We believe this is the first roll-out of fully automated synthetic-to-synthetic medical intervention. No human expertise required. No costly human surgical training. All data is streamed directly from APOLLO, and every incision recorded in it's logs. This is the future, gentlemen. Tomorrow, together!\"",
+            "audio":""
+        },
         {
             "id":59,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":60,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":61,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Storage Inventory",
+            "author":"Smythe",
+            "date":"September 15, 2137 00:00:00",
+            "content":"Russel, upstairs want a full run-down on what we've got stacked in components storage. There's some useful stuff in there, some junk. They want value estimates too. Smythe.",
+            "audio":""
+        },
         {
             "id":62,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":63,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Requisitions Android",
+            "author":"Smythe",
+            "date":"September 17, 2137 00:00:00",
+            "content":"Spedding. Now you've fired me you'll have to descend from your ivory tower to pick up the slack. The guys decommissioning Sevastopol have free access to supplies and storage, but everything will need logging — so use the requisitions android.\n\nPower him up. Let him out of his box, and watch him go — just like me, huh?\n\nBy the time you get this I'll be dead drunk in Gillen's Bar. I guess you already know this, but it's been pure hell working for you. This is the best thing that's ever happened to me.\n\nSmythe.",
+            "audio":""
+        },
         {
             "id":64,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":65,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":66,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Synthetic Engineer Request",
+            "author":"Fernandez",
+            "date":"November 14, 2137 00:00:00",
+            "content":"Can I get someone from Seegson Synthetics to look at my android? I've just worked a twenty four hour shift helping out with trauma patients and I'm the dentist! Waits wants every one of them moved out of the hospital and no one is telling me anything.\n\nIf I'm going to be pulling down these kinds of hours I need some extra help. We've got a requisitions android down here with perfectly adequate programming but he's been gathering dust because apparently the same model started acting up on the other side of the station.\n\nWhat the hell is going on with this place? Get someone down here now, before I make an official complaint.",
+            "audio":""
+        },
         {
             "id":67,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Restart Transit",
+            "author":"Nash",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Listen you crazy bastard, you think that thing gets around in a fucking transit car?\n\nYou're sitting on an override that'll disconnect the transit from APOLLO, so fucking pull it! You can stop all this bullshit just by pulling a lever. You think you're safer with the transit powered down, but we're trapped like rats.\n\nFor God's sake help us!",
+            "audio":""
+        },
         {
             "id":68,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":69,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Double Crossed",
+            "author":"Cooper",
+            "date":"December 7, 2137 00:00:00",
+            "content":"Got a heads up for you, jackass. Don't even think about throwing in with Sinclair and the Seegson Security guys. I told them it was you that killed Morrison, if they see you, they'll shoot on sight.\n\nYou should've let me join in your bolt-hole. You won't last a week.",
+            "audio":""
+        },
         {
             "id":70,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":71,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":72,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":73,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":74,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":75,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":76,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":77,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":78,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":79,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":80,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":81,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":82,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":83,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":84,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":85,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":86,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":87,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":88,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":89,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":90,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":91,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":92,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":93,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":94,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":95,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":96,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":97,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":98,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":99,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":100,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":101,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":102,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "First Trap Gone",
+            "author":"Ricardo",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Waits. We're a trap down. The creature set off explosives we set in the Habitation Tower, and I'm hearing reports of damage to the Spaceflight Terminal docks. I don't think we put a dent in it.\n\nThere's activity in San Cristobal, so maybe it's gone back. Find a way over to the Scimed Tower transit. Hope to God the sensors in medical reception are still online.",
+            "audio":""
+        },
         {
             "id":103,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Impounded",
+            "author":"Harris",
+            "date":"November 13, 2137 00:00:00",
+            "content":"Week beginning 11/11/2137\n\nMarlow.H. ***** Ammunition and weaponry — various ****\nMarlow.H. ***** Lvl 3 plasma shear — unauthorized ****\nMarlow.H. ***** WY proprietary flight recorder unit — USCSS Nostromo ****\nMarlow.H. ***** Watch, wallet and personal effects ****\nMarlow.H. ***** Suspected contrabrand medical supplies (Pharmax, Naproleve — no duty stamps) ****",
+            "audio":""
+        },
         {
-            "id":104,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "id":73,
+            "title": "Pointless Requests",
+            "author":"Chief",
+            "date":"October 5, 2137 00:00:00",
+            "content":"These people have been told Sevastopol's due for the scrap heap, right?\n\nI just got this message from Ellison in Seegson accounts. \"Can we fix the hand-drier in the rest room\". Can we hell. Next time one of these bullshit requests come through, send them right back.\n\nWe're about to strip this place out, not patch it up.",
+            "audio":""
+        },
+        {
+            "id":74,
+            "title": "Hardware Problems",
+            "author":"Patterson",
+            "date":"November 25, 2137 00:00:00",
+            "content":"Service request: Ref #SR6684\nCategory: Hardware problems\nTitle: 'Not receiving messages'\n\nDetails: Expecting an order from off-station that should have arrived by now. I usually get several a week, but there's nothing. Can someone check my comms unit? Can't afford to lose the business.\n\nCreated: 11.09.37\nUser: Martin Patterson\nNotes: Engineer sent out 11.25.37\nEquipment seems to be functioning. Flag up with Seegson Comms. See if something's slipped through APOLLO'S net.",
+            "audio":""
+        },
+        {
+            "id":79,
+            "title": "Security Shutters",
+            "author":"Thompson",
+            "date":"December 7, 2137 00:00:00",
+            "content":"To the camp group: We can't keep up a full guard 24/7, but with the volunteer look-outs and the Spire's existing security systems we can keep it watertight. From this point onward, we don't raise the security shutters for anyone and all supply runs have to go through through me.\n\nWe can get through this guys.\n\nThompson.",
+            "audio":""
+        },
+        {
+            "id":80,
+            "title": "The Camp",
+            "author":"Bertram",
+            "date":"December 7, 2137 00:00:00",
+            "content":"Don't know how much longer I can take this. It's cramped and dirty and the trash is starting to rot. I don't even know if we're really safe here.\n\nCarter and Thompson came back from their recons last week with a couple of guns, and I'm starting to see a different side to some of the people here. Maybe that women, Winters, was right.",
+            "audio":""
+        },
+        {
+            "id":81,
+            "title": "A Warning",
+            "author":"Waits",
+            "date":"December 10, 2137 00:00:00",
+            "content":"Sinclair,\n\nI have verified reports that you and your men are shooting civilians and looting supplies.\n\nWhen I find a way to kill this creature, I hope to hell that it found you first.\n\nWaits",
+            "audio":""
+        },
+        {
+            "id":82,
+            "title": "Truce",
+            "author":"Waits",
+            "date":"December 5, 2137 00:00:00",
+            "content":"Sinclair,\n\nI know we've had our differences since you and your Seegson Security team arrived on Sevastopol, but right now we have a severe situation. We need a united front.\n\nIn return for your total cooperation I am willing to drop my investigation into your involvement in unregistered black market trading and drop all claims I had on the Systech Spire Marshal office where you and your thugs operate from.\n\nLet's do this right.\n\nMarshal Waits",
+            "audio":""
+        },
+        {
+            "id":77,
+            "title": "Taken",
+            "author":"Rosco",
+            "date":"December 8, 2137 00:00:00",
+            "content":"It took her and I couldn't do a thing stop it.\n\nFirst it tore through Doug. Then it cut Liam in half and threw him aside like a rag doll.\n\nThen it cornered Emma. I was in the shadows and it didn't see me. Emma was calling for mew — calling for help, but I couldn't move. I was too scared.\n\nI let it take her, but I'm going to find her.\n\nIf you find this, arm yourself.",
+            "audio":""
+        },
+        {
+            "id":78,
+            "title": "Scavenging",
+            "author":"Lincoln",
+            "date":"December 4, 2137 00:00:00",
+            "content":"Eric? Can you hear? Eric? Damn comms are screwed again. You there? Eric, it's Lincoln. Can you hear me? I made it down to tech support. I've picked up some canisters of water, and some battery packs. Oh, and some tools too.\n\nA lot of stuff has already been looted. I'm going to try and break into the lock-up. I think they keep security hackers in there. We could use one. But I'm not going to stay down here much longer. There's something... God, I dunno. It's scary as crap down here. I want to get back to freight.\n\nCall me if you get this. Okay? Okay?",
+            "audio":""
+        },
+        {
+            "id":83,
+            "title": "Hacked",
+            "author":"Mike Tanaka",
+            "date":"October 24, 2137 00:00:00",
+            "content":"Franco, I've been investigating those archive leaks and I'm pretty sure it's just faulty hardware. These Arious systems are too old to properly integrate into something as complex as APOLLO.\n\nI found something else out though — it looks like someone has been accessing people's private messages and camera feeds for the last couple of years. The executive suites, San Cristobal, even the Marshal bureau have been hacked. Does the name Ransome mean anything to you?",
+            "audio":""
+        },
+        {
+            "id":86,
+            "title": "Surplus to Requirements",
+            "author":"Hunter",
+            "date":"March 20, 2136 00:00:00",
+            "content":"RE: Power budgets\n\nThe distribution department is surplus to requirements and will be decommissioned shortly. We will be reducing the power budget to the area in due course as it is required for a corporate function. Any questions should be directed to your line manager.\n\nRegards, G. Hunter.",
+            "audio":""
+        },
+        {
+            "id":93,
+            "title": "Clarke Is Dead",
+            "author":"Elaine",
+            "date":"December 7, 2137 00:00:00",
+            "content":"Jameson, Clarke is dead. Last time I saw him he was using some of the junk around the station to make explosives for protection. I told him to be careful, but when I got back from gathering supplies there was just explosive damage and blood. I'm on my own now, so I'm going to come to you. Where are you? Elaine.",
+            "audio":""
+        },
+        {
+            "id":100,
+            "title": "Help",
+            "author":"Lewis",
+            "date":"November 25, 2137 00:00:00",
+            "content":"Heyst, you still there? Why the hell didn't we have the smarts to stay on the Anesidora? They shut me in a lab over in the SysTech Spire. For the love of God come find me.\n\nElevators are out and there are bodies everywhere. I'm sure I can hear it in the walls.",
+            "audio":""
+        },
+        {
+            "id":96,
+            "title": "What Are Your Plans?",
+            "author":"Gillen",
+            "date":"October 4, 2137 00:00:00",
+            "content":"Hey, Mart. I guess you've heard about the station decommission by now. What are your plans? I've got some connections that can hook me up with work when we leave — I can't promise anything, but maybe they can find you something too.\n\nThey've started closing down the stores in the Galleria. Your place was still boarded up from last year. Sorry you had to lose it, you never seemed to catch a break. Do you still hear from Margaret and the kids? Maybe you should go see them when you leave Sevastopol.\n\nLet me know if you want me to ask around for you.\n\nGillen.",
+            "audio":""
+        },
+        {
+            "id":97,
+            "title": "Security Risk",
+            "author":"Joseph",
+            "date":"December 8, 2137 00:00:00",
+            "content":"Blyth, we need to find a way to shut down these automated janitors. They're a security problem — every time they start their cleaning circuit there's a risk they'll open up a route for that thing that's hunting us. Or at the very least, let the looters in.",
+            "audio":""
+        },
         {
             "id":105,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":106,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":107,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":108,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Smythe Read This",
+            "author":"Russel",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Don't be mad, but I went through to the elevator shaft and shut the access door behind me. I had a Joe on my tail, so I had to get out of there.\n\nIf you can find something to cut through the panel the code is 8382. Don't worry if not, I'm coming back down for you now.\n\nNo sign of the lovebirds, but I've got a whole heap of guns and supplies here.\n\nRussel",
+            "audio":""
+        },
         {
             "id":109,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "RE: Plans Tonight",
+            "author":"Spedding",
+            "date":"November 26, 2137 00:00:00",
+            "content":"Suzanne, sweetheart. I'm going to have to raincheck.\n\nI'm getting reports from downstairs about abnormal android behavior — it might have something to do with all these folks going missing.\n\nI need you to get to the showroon and shut yourself in. There's a lockdown button near my desk from when these machines were actually worth something. Don't worry about them. They're only display models.\n\nJust sit tight — I'll sort this out and we can celebrate the deal finally going through when we're not on company time.",
+            "audio":""
+        },
         {
             "id":110,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":111,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Last Chance",
+            "author":"Ransome",
+            "date":"September 16, 2137 00:00:00",
+            "content":"Spedding, I'm expecting the VIPs to get here early, so I want you and your people ready and waiting to greet them. The clock's ticking down and this is our last chance to salvage something from this piece of shit. I want your people to answer their every whim, every vice and laugh at every one of their fucking jokes.\n\nTake them to the showroom when they're ready — don't rush them and don't bore them with speeches. If they say they want something changed in the Working Joes, just say yes. We can let the tech heads worry about it later.\n\nI hope you have your best people on this.",
+            "audio":""
+        },
         {
             "id":112,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":113,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":114,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":115,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":116,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "RE: Smythe Read This",
+            "author":"Smythe",
+            "date":"December 11, 2137 00:00:00",
+            "content":"What do you mean you shut the access door to the elevator?? All your guns and supplies mean jack shit to me when the synthetic chasing you is\n\nSTILL\n\nFUCKING\n\nDOWN\n\nHERE!!\n\nI don't think it's seen me. It's stood staring at your old magazines in the blood plant overlook. Get back down here and open this door: Now.",
+            "audio":""
+        },
         {
             "id":117,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":118,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":119,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":120,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":121,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":122,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":123,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "APOLLO Sales One Sheet",
+            "author":"Seegson",
+            "date":"September 15, 2137 00:00:00",
+            "content":"APOLLO information sheet\nWhy an APOLLO system for your deep space orbital station?\n\nSelf-regulation and android maintenance. Security through removal of synthetic self-determination. Instant communications. No interference. Lightning fast data movement across the station reliable. Efficient. Self sustaining. A true Seegson product.",
+            "audio":""
+        },
         {
             "id":124,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "APOLLO Primary Interaction Log",
+            "author":"APOLLO systems",
+            "date":"December 11, 2137 00:00:00",
+            "content":"11/11/2137\n\nClass: Human interaction\nRequest for inter-corporate messaging received. Outgoing message to Weyland-Yutani representatives accepted and monitored.\n\n11/16/2137\n\nClass: Colonial Marshal incident report\nTemporary emergency measures initiated in San Cristobal Medical Facility. No further information provided.\n\n11/17/2137\n\nClass: External interaction\nPurchase order received. Weyland-Yutani operational ruleset packet received, verified and installed.\n\n11/23/2137\n\nClass: Colonial Marshal incident report\nEmergency measures initiated in San Cristobal Medical Facility extended. No further information provided. Station scans initiated under WY directive #00043B56.\n\n11/24/2137\n\nClass: Containment hazard alert\nUnverified scans in reactor systems. Special Order 939 initiated. Priority one. Protect specimen. Maintain station quarantine. Disallow communications.\n\n12/11/2137\n\nClass: Sevastopol arrivals log\nNew inhabitants logged with APOLLO systems by synthetic staff.\nRipley, Amanda. Level 2, Weyland-Yutani.\nTaylor, Nina. Level 4, Weyland-Yutani.\nSamuels, Christopher. Level 3, Weyland-Yutani.\nExpendable.\n\n12/11/2137\n\nClass: Containment hazard alert\nViable threat to specimen detected in project KG-348 hazard lab. Containment hazard alert raised to omega.",
+            "audio":""
+        },
         {
-            "id":125,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":126,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":127,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":128,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "id":121,
+            "title": "Keep Things Quiet",
+            "author":"Ransome",
+            "date":"November 21, 2137 00:00:00",
+            "content":"Spedding, it's Ransome. With the Weyland-Yutani buy-out it's more important than ever that the flight-recorder hand-over goes without a hitch. They'll be low level execs and won't know jack about the buy-out, but if they hear rumors about a \"disappearing people problem\"? Well I don't to want to rock the boat, and neither do you. Let's just keep everything nice and quiet, we don't want them having second thoughts.",
+            "audio":""
+        },
         {
             "id":129,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":130,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":131,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Shutters Code",
+            "author":"Flores",
+            "date":"December 4, 2137 00:00:00",
+            "content":"Chief, I'm heading down to reactor maintenance now as requested.\n\nI've locked the shutters behind me, the code you'll need is 6832.\n\nFlores",
+            "audio":""
+        },
         {
             "id":132,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":133,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Signal Detected",
+            "author":"Foster",
+            "date":"October 20, 2137 00:00:00",
+            "content":"Marlow, Heyst says he's just picked up some kind of signal. I've got Lewis trying to decode it now. Could be the Nostromo. Want to come up and see for yourself?",
+            "audio":""
+        },
         {
             "id":134,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Technician's Report",
+            "author":"Lewis",
+            "date":"October 24, 2137 00:00:00",
+            "content":"Technician's report, 10.24.2137. Marlow, I just had to do some much needed work on the sub-light engines. The old girl was complaining so loudly I'm surprised something didn't fall off during the last jump. Everything's holding together for now, but she'll need a full overhaul soon, and not just for the core systems. We keep pushing her like this and we're gonna end up being the only salvage crew hitchhiking through deep space. It's gonna be an expensive job, so let's hope you're right about that beacon. It could be our last chance for a decent paycheck. Anyway, I had to reset the door keycode afterwards, the new one is 4510.\n\nLewis.",
+            "audio":""
+        },
         {
             "id":135,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":136,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":137,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Sevastopol",
+            "author":"Marlow",
+            "date":"October 26, 2137 00:00:00",
+            "content":"Log #543374\n\nWhatever it was that attacked itself to Foster is dead. I found it on the floor by her bed; all curled up like a spider. Foster said she felt fine, but I insisted on putting her into hypersleep. That thing must have done something to her, but maybe I can slow the process.\n\nSevastopol's the nearest station so I'm going to get her checked out. Quarantine will be a problem but I figure the Nostromo flight recorder may be the ticket in. Whatever we have to do.",
+            "audio":""
+        },
         {
             "id":138,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":139,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":140,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":141,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":142,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
-        {
-            "id":143,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Code for Repair Job",
+            "author":"Francis",
+            "date":"September 2, 2137 00:00:00",
+            "content":"Hey, Myers. My shift's over and I'm clocking off. If you turn up to repair the system in the next three hours, I won't be here. So the code you need is 1851.",
+            "audio":""
+        },
         {
             "id":144,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Last Stand",
+            "author":"Sinclair",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Mendonca, we rounded up everyone we could find and are camped out in the rec room. The security system we discussed is rigged up, but you won't be able to get in the old way.\n\nWe caught a stranger sneaking in — after a couple of hours he confessed who let him in and we threw them both out. We've only got limited space and supplies here and we've got to control who gets in — if they want in, they've got to bring something to the table.\n\nWhat you need is in the usual place. I don't want to say here but you'll know what I mean. I changed the code to 1984. Use what you find there.\n\nOf course, we'll need to make sure you've got the supplies you promised us, but we'll check you upon entrance — I'm sure you've got what we need. After all, I vouched for you.\n\nDon't make me regret it.\n\nJake",
+            "audio":""
+        },
         {
-            "id":145,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "id":143,
+            "title": "Shut Out",
+            "author":"Denver",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Is anyone there? It's Denver. I'm back with the supplies, but I'm locked out and nobody's answering. What happened? Was there an attack?\n\nIt's getting worse out here, you have to let me back inside now — my wife is in there, she'll tell you who I am. I have the supplies! Please answer me!",
+            "audio":""
+        }
+
+    ],
+
+    "shared":[
         {
-            "id":146,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "id":3,
+            "title": "Torrens Manifest",
+            "author":"Torrens",
+            "date":"November 15, 2137 00:00:00",
+            "content":"Name: MSV-7750 Torrens M-class starship\n\nCaptain: Verlaine, Diane\nNavigator/Comm Officer: Connor, William\n\nOwner: Verlaine, Diane\nContractor: Weyland-Yutani\n\nOutbound and return transportation for Weyland-Yutani retrieval team to Sevastopol station.\nTeam consists of three W-Y employees: Samuels, C, Ripley, A, Taylor, N.\n\nPassengers: Samuels, Christopher. Ripley, Amanda. Taylor, Nina.\nNumber of decks — Two\nNumber of crew — Two\n\nInterstellar communications antenna. Long haul hypersleep chamber. Commercial passenger/cargo ships retrofitted from a tow rig. Retains operational heavy duty tow umbilical.",
+            "audio":""
+        },
+        {
+            "id":4,
+            "title": "Decommissioning",
+            "author":"'Chief' Porter",
+            "date":"October 7, 2137 00:00:00",
+            "content":"To engineering team\nRE: Decommission\nSo boys and girls, you've probably heard the whispers about Sevastopol by now and I can confirm it's official. Sevastopol is being decommissioned.\n\nI will go over with each of you what this means in regards to your contracts and next placement, but for now we still have a job to do. The suits want this done with a skeleton crew, which means we'll only be getting a few outside contractors to help, but it does mean overtime. I recommend taking what you can while it's available.\n\nI should point out that the decommission does not mean \"lucky dip\". Everything here has to be accounted for and I will personally escort anyone found helping themselves to equipment to Marshal Waits.\n\nChief",
+            "audio":""
+        },
+        {
+            "id":6,
+            "title": "Goodbye from Seegson",
+            "author":"Seegson",
+            "date":"September 28, 2137 00:00:00",
+            "content":"Public notice: The decommissioning of Sevastopol Station.\n\nWe've had a long journey together but sadly it's coming to an end. Seegson Corp would like to take this opportunity to thank all of you who worked and lived at Sevastopol over the years, and hopes that Seegson has helped to make it a productive and rewarding environment. Our investment and belief in the station has never wavered.\n\nBe assured that Seegson's APOLLO central A.I and \"Working Joe\" androids will be there to serve Sevastopol until the last rivet is removed. We wish you all the very best for the future. After all, Sevastopol isn't just a station. It's people.\n\nSeegson Corp.",
+            "audio":""
+        },
+        {
+            "id":10,
+            "title": "To All Spaceflight Employees",
+            "author":"Waits",
+            "date":"November 25, 2137 00:00:00",
+            "content":"To all Spaceflight Terminal employees: In the interest of public safety and the prevention of panic, it must be made clear to all potential passengers that there are currently no scheduled flights leaving Sevastopol, nor ships available.\n\nThe Colonial Marshals are investigating problems on-station and will update accordingly.\n\nFrom the office of Marshal Waits.",
+            "audio":""
+        },
+        {
+            "id":11,
+            "title": "What Is APOLLO?",
+            "author":"Sevastopol Information Service",
+            "date":"June 1, 2115 00:00:00",
+            "content":"What is APOLLO? APOLLO is the central A.I that monitors and provides guidance for all the Seegson \"Working Joes\" on Sevastopol. APOLLO also oversees all communications on the station. So wherever you are, you know you're in safe hands.\n\nSeegson, tomorrow, together.",
+            "audio":""
+        },
+        {
+            "id":18,
+            "title": "Inventory",
+            "author":"Jenkins",
+            "date":"December 9, 2137 00:00:00",
+            "content":"Inventory — No one is to take anything or mark it off the list without talking to me first!!!\n\nAspirin — X4\nCanned food — 32\nCereals — 6 boxes\nWater — 4 gallons\nToothpaste — 12 tubes\nCigarettes — 3 cartons\nToilet paper — 26 rolls\nIndustrial tape — 6 rolls\nMed kits — 2\nPowdered milk — X 52\n\nNotes: Running low on ammunition. Zoe managed to pick up some prescription drugs, all addressed to the same person. Guess they didn't need them anymore.",
+            "audio":""
+        },
+        {
+            "id":21,
+            "title": "An Outpost of Progress? #1",
+            "author":"Julia Jones",
+            "date":"September 6, 2137 00:00:00",
+            "content":"Sevastopol: an outpost of progress?\nBy Julia Jones\n\nDesolation Through Isolation\n\nThe space station that nobody needed, run by a company we all forgot. Sevastopol is now a backwater. The population is a tenth of the station's optimal capacity. Docking bays are empty and the shutters are down on local stores and businesses. The orders for Seegson's cheaply manufactured androids have long since dried up, and the antiquated APOLLO governing AI system frequently malfunctions.\n\nHow did we get here and, more importantly, where have billions of dollars of investment gone? My name is Julia Jones. I have lived on Sevastopol for two months compiling this report for The Colonial Times, discovering the price our second-tier corporations have paid for their over-expansion during the race into the Outer Rim.",
+            "audio":""
+        },
+        {
+            "id":24,
+            "title": "Our Manifesto",
+            "author":"Seegson",
+            "date":"February 1, 2115 00:00:00",
+            "content":"(First published in \"Eye on Seegson\", Feb 2115)\n\nWe don't want to show you a new world. We want to discover it with you. Here at Seegson, every new technology, research project and discovery is driven to find real world applications to help you.\n\nWe hope you'll join us for the journey.",
+            "audio":""
+        },
+        {
+            "id":25,
+            "title": "Tomorrow, Together #1",
+            "author":"Sebastian Sieg",
+            "date":"March 1, 2115 00:00:00",
+            "content":"Together Tomorrow: Seegson's Journey into Colonial Space\nAn official history, by Sebastian Sieg (first printed in \"Eye on Seegson\")\n\nOur Origins in Space\n\n2034 changed everything. The advent of faster than light travel put Seegson (then known as Sieg and Son) on the path to success. The race into space began in earnest and, under the steady hand of our founder Josiah Sieg, our company was primed and ready for the years that followed.\n\nSieg and Son built the components that enabled ships to extend colonial space beyond the Sol system. As history relates, Weyland Corp was reluctant to share it's FTL technologies with other corporations. Fortunately, Josiah Sieg was on hand to speculate, innovate and produce.\n\nWithout Sieg and Son, the skies would have looked very different indeed!",
+            "audio":""
+        },
+        {
+            "id":30,
+            "title": "APOLLO's Eye",
+            "author":"Ransome",
+            "date":"June 14, 2135 00:00:00",
+            "content":"Riggs, are you still working down in Seegson Communications? Remember that trouble you got into last year? The trouble I helped you out of? Well, it's time to repay the favor.\n\nOne of my colleagues has been looking into some of the import documents and found a few problems. He's new, so he doesn't understand how we do things on Sevastopol. And he's threatening to go to Waits about it.\n\nThis could hurt us all, so I need you to keep an eye on him, see if anything interesting comes up. APOLLO has cameras everywhere, it just needs someone to tell it where to point to. His name is Daniel Haldin, lives in Josiah Sigg Executive Apts. 651\n\nIf this goes well, I might have some more work for you. We could clean up here.\n\nRansome",
+            "audio":""
+        },
+        {
+            "id":27,
+            "title": "Call Log AM",
+            "author":"APOLLO",
+            "date":"November 27, 2137 00:00:00",
+            "content":"Call ID: 128451386\nWhat's going on up there? I've been waiting for a call and...\nAPOLLO\nPlease stand by. Your call is being rerouted.\n\nCall ID: 128451400\nHello? My Working Joe is acting strangely. It won't listen to anything I...\nAPOLLO\nPlease stand by. Your call is being rerouted.\n\nCall ID: 128451417\nI need help! I'm trapped in my apartment! There's an android outside and...\nAPOLLO\nPlease stand by. Your call is being rerouted.",
+            "audio":""
+        },
+        {
+            "id":28,
+            "title": "Call Log PM",
+            "author":"APOLLO",
+            "date":"November 27, 2137 00:00:00",
+            "content":"Call ID: 128451464\nPut me through to the Marshal's office! It's an emergency! Someone's robbing my store. I...\nAPOLLO\nPlease stand by. Your call is being rerouted.\n\nCall ID: 128451470\nHe's gone! It... It k... killed him! I think it's still here...\nAPOLLO\nPlease stand by. Your call is being rerouted.",
+            "audio":""
+        },
+        {
+            "id":36,
+            "title": "Hospital Quarantine",
+            "author":"Lingard",
+            "date":"November 23, 2137 00:00:00",
+            "content":"For senior management eyes only\n\nSan Cristobal Medical Facility quarantine: Active.\nEntrance to primary care deck now limited to Marhsals and senior staff.\n\nUniversal facility pass code: 1702\n\nSystems will scan for potential quarantine breaches every fifteen (15) minutes.",
+            "audio":""
+        },
+        {
+            "id":37,
+            "title": "An Outpost of Progress? #3",
+            "author":"Julia Jones",
+            "date":"September 12, 2137 00:00:00",
+            "content":"Sevastopol: an outpost of progress?\nBy Julia Jones\n\nA Troubled Population\n\nFor better or worse, the right to bear arms followed us into colonial space. Alone, vulnerable and light years from law enforcement, who could deny our voyagers a way to defend themselves, their ships and their families? The flip-side of this argument is Sevastopol, where gun crime is rampant.\n\nEndlessly turning circles in a neglected corner of space, it's people are downbeat and disconsolate. Those who could afford to leave did so years ago, abandoning friends and neighbors among empty stores, creaking systems and the forgotten dreams of the deep economic boom.\n\nSevastopol's people feel deceived — tempted here by corporations that refused to recognize the deep space bubble was about to burst. They are angry, desperate and increasingly divided. Recent Colonial Marshal clamp-downs on the black market have increased resentment. Every day it feels as if the station has edged a little close to free-fall.",
+            "audio":""
+        },
+        {
+            "id":40,
+            "title": "Medical Record 1",
+            "author":"Morley",
+            "date":"September 23, 2137 00:00:00",
+            "content":"Green, J.\nDoctor Morley attending.\n\nAnxiety disorder. Fractured tibia. Suspected internal bruising. Patient edgy. Responds well to the little personal interaction I have time for. Our chess games are a welcome break for us both. Minimal care. No insurance.",
+            "audio":""
+        },
+        {
+            "id":47,
+            "title": "San Cristobal Lockdown",
+            "author":"Marshal Waits",
+            "date":"November 16, 2137 00:00:00",
+            "content":"San Cristobal medical has been locked down by the Colonial Marshals until further notice. Sevastopol's medical team are setting up field hospitals throughout Sevastopol to deal with the ongoing crisis.\n\nLocations to follow.\n\nMarshal Waits",
+            "audio":""
+        },
+        {
+            "id":53,
+            "title": "Medical Record 2",
+            "author":"Lingard",
+            "date":"September 23, 2137 00:00:00",
+            "content":"Paul, B.\n\nDoctor Lingard attending.\nSevere chemical burns to arms and legs.",
+            "audio":""
+        },
+        {
+            "id":54,
+            "title": "Medical Record 3",
+            "author":"Kuhlman",
+            "date":"September 23, 2137 00:00:00",
+            "content":"Wright, I.\n\nDoctor Kuhlman attending. Suspected brain damage caused by asphyxiation through manual strangulation. Nothing to do. Wasted bed.",
+            "audio":""
+        },
+        {
+            "id":56,
+            "title": "WY Are Years Ahead",
+            "author":"Smythe",
+            "date":"September 11, 2137 00:00:00",
+            "content":"Report, Smythe, head of synthetic development. I just received schematics for the 120-A/8. I don't know how much we paid our mole, but the Seegson board is gonna need to shell out a hell of a lot more.\n\nI know this seems old tech for WY, but it's beyond anything we're capable of. Our key executives and shareholders won't listen, but we need investment.\n\nThe company and all it's subsidiaries are light years ahead of us.",
+            "audio":""
+        },
+        {
+            "id":60,
+            "title": "Tomorrow, Together #2",
+            "author":"Sebastian Sieg",
+            "date":"April 1, 2115 00:00:00",
+            "content":"Together Tomorrow: Seegson's Journey into Colonial Space\nAn official history, by Sebastian Sieg (first printed in \"Eye on Seegson\")\n\nOur Remarkable Growth\n\nSieg and Son proved to be the backbone of colonial FTL expansion, providing reliable components that could carry humanity deep into space. In so doing it grew, and by 2066 was running vast manufacture plants in London, Buenos Aires, Nagasaki and the Lunar Schickard-Wargentin frontier.\n\nBy 2071, the year the Sieg family sold it's shares back into the company, it's expansion remained exponential. Single-minded rivals looked on with envy as Sieg and Son became market leaders manufacturing cars, chemicals, educational equipment and building materials.\n\nTowards the end of the last century, came a move that would forge our shared future. Sieg and Song became Seegson. We took on the name our customers had known us by for decades, and we turned to face tomorrow together, among the stars.",
+            "audio":""
+        },
+        {
+            "id":63,
+            "title": "Elevator Out",
+            "author":"Chief",
+            "date":"November 15, 2137 00:00:00",
+            "content":"I just got another message from Spedding about the busted elevator outside the android examination theater. My guys have got a million things to do right now, so it's not going to be fixed in time for your VIP visit. If Spedding wants to be a priority then maybe he should stop being a petulant asshole.\n\nIt's an easy job. Off the top of my head I can tell you the parts that you need are in components storage — Row 1, stack B.\n\nIf you can't find it yourself, ask the requisitions android. Just get off my back.\n\nChief",
+            "audio":""
+        },
+        {
+            "id":71,
+            "title": "Arrest Sheets",
+            "author":"Turner",
+            "date":"November 19, 2137 00:00:00",
+            "content":"11/13/2137\nCell 2\nMarlow, Henry\nCrime number: #--- (------)\nStatus: Indefinite incarceration.\n\n11/18/2137\nCell 1\nTanaka, Mike\nCrime number #342 (drunk and disorderly)\nStatus: Night in the cells to sober up. Let off with a warning.\n\n12/02/2137\nCell 3\nWebster, Robert\nCrime number #343 (domestic incident)\nStatus: Released due to on-station security breach",
+            "audio":""
+        },
+        {
+            "id":75,
+            "title": "An Outpost of Progress? #4",
+            "author":"Julia Jones",
+            "date":"September 14, 2137 00:00:00",
+            "content":"Sevastopol: an outpost of progress?\nBy Julia Jones\n\nAn Uncertain Future\n\nSeegson has now cut its losses and is set to abandon Sevastopol. This is yet another sign of retrenchment that is rife throughout the sector. Some days it has felt as if corporate pride was the only thing keeping this troubled station in orbit above KG-348. Living aboard this station today, it's abundantly clear that Seegson has gambled widly with both its own investment and that of banking corps such as GeoFund Investor.\n\nThe ill-judged rush into space colonization, its hubris and its over-expansion, have cost our second tier corporations dearly. Weyland-Yutani, with its extensive financial and technological firepower, can weather these storms while its lesser rivals fall away. Even the company, however, must hear alarm bells ringing as it looks towards these fading orbital outposts.\n\nWY's ongoing investment in terraforming research technology looks increasingly shrewd, as it watches each of these distant lights blink out...",
+            "audio":""
+        },
+        {
+            "id":85,
+            "title": "Folder Code",
+            "author":"Walsh",
+            "date":"December 3, 2137 00:00:00",
+            "content":"Personal message: Code is 7789",
+            "audio":""
+        },
+        {
+            "id":87,
+            "title": "Seegson Funding",
+            "author":"Seegson Investment Board",
+            "date":"February 17, 2136 00:00:00",
+            "content":"Seegson regrets to inform that Gemini Exoplanet Solutions will receive no further funding.\n\nSeegson is not liable for time remaining on Gemini personnel contracts. Please talk to your line manager about the facility shutdown and what it will mean for you.\n\nWe would like to take this opportunity to personally thank you for the time you spent with us.",
+            "audio":""
+        },
+        {
+            "id":88,
+            "title": "Maintenance Systems",
+            "author":"Hunter",
+            "date":"March 21, 2137 00:00:00",
+            "content":"RE: Power budgets\n\nAfter a discussion with the line manager, several of you have questions about restoring power. Should power be required in distrubtion, say in case of an emergency, you can access the maintenance systems using keycode 8897.\n\nNote: This still needs to be cleared with your line manager and should not be done without authorization.",
+            "audio":""
+        },
+        {
+            "id":91,
+            "title": "Sit Tight",
+            "author":"Unknown number",
+            "date":"February 3, 2136 00:00:00",
+            "content":"S — We're going to have to find a new way to get the goods into Sevastopol. Waits has commercial cargo under scrutiny at the moment and he's checking the ambulance shuttles. Tell your man outside to sit tight for now, I know a guy called Sinclair who could help us.\n\nI remember when the Marshals actually had to deal with real crime rather than harassing businessmen and screwing with their deals. — T",
+            "audio":""
+        },
+        {
+            "id":94,
+            "title": "Gemini Shutdown",
+            "author":"Hunter",
+            "date":"October 11, 2136 00:00:00",
+            "content":"Ladies and gentlemen, I appreciate many of you are upset with the current situation and the imminent total shutdown of Gemini. I have been asked by Seegson to assure you that the future of Sevastopol itself is 100% secure. Early negotiations with interested corporate buyers have begun in earnest.\n\nIn the mean-time, before you leave, please deposit all Seegson-owned equipment in the security locker. The code is 2743.\n\nWe have made a full inventory, and the Marshals will be informed if anything goes missing.",
+            "audio":""
+        },
+        {
+            "id":89,
+            "title": "What Is KG-348",
+            "author":"Seegson Information Service",
+            "date":"May 1, 2115 00:00:00",
+            "content":"What is KG-348? KG-348 is a Jovian gas giant, situated at a mean distance of 6.2 astronomical units from the heart of the system. Initial surveys of its cloud layers show a rare mix of metallic gases.\n\nTo exploit the potential of this resource, we are proud to announce the KG-348 research project, spearheaded by Gemini Exoplanet Solutions.",
+            "audio":""
+        },
+        {
+            "id":90,
+            "title": "Gemini Exoplanet Solutions Manifesto",
+            "author":"Gemini Exoplanet Solutions",
+            "date":"August 1, 2115 00:00:00",
+            "content":"Gemini Exoplanet Solutions.\n\nBe bold. Learn. Adapt. Live. Life is change. We grow by adapting and evolving to meet each new challenge. At Gemini Exoplanet Solutions we take mother nature's blueprint as our starting point by breaking new ground, and by finding new applications for existing technologies. Fuel resources become building materials. Weapon developments advance agricultural growth. Space exploration is applied to surgical procedures.\n\nLook around. You never know what might be useful.\n\n(Sponsored by Seegson Investment Board)",
+            "audio":""
+        },
+        {
+            "id":98,
+            "title": "To All Sevastopol Inhabitants",
+            "author":"GeoFund Investor",
+            "date":"October 1, 2137 00:00:00",
+            "content":"The station's decommission process is now underway. Please read carefully and take note:\n\n    An initial team is on-station to survey Sevastopol and initialize the decommissioning process. Please help them in any way you can.\n    We have enough food and medical supplies. The redirection of the supply ship flight path will not impact on your quality of life. Rationing will, however, be deemed necessary if stocks run low.\n    Hoarding and illegal trading will not be tolerated. Please report suspicious activity to Seegson Security, who will investigate in cooperation with the Colonial Marshals.\n    A population re-homing service has been established. We are happy to help you with your next step, but are not liable for costs incurred. If you require financial support we recommend Seegson Credit Services.\n    The decommission is final. You must relocate, or you will be faced with forced removal.",
+            "audio":""
+        },
+        {
+            "id":106,
+            "title": "An Outpost of Progress? #2",
+            "author":"Julia Jones",
+            "date":"September 10, 2137 00:00:00",
+            "content":"Sevastopol: an outpost of progress?\nBy Julia Jones\n\nSeegson's Frail Origins\n\nAfter Weyland Industries led the way in faster than light travel, Seegson found success mass producing the flight components central to the colonial gold rush that followed. Its ensuring overexpansion and reputation for producing \"low-cost alternatives\" to WY branded goods is a matter of public record.\n\nIn the modern day Seegson is attempting to change the fortunes of ailing colonial outposts. Stations like Sevastopol receive investment, and Seegson-afflicated companies set up shop. But the economic patterns that once worked within the Sol system have not flourished in deep space.\n\nOn Sevastopol, mass-produced no frill androids still sit in their boxes. Machines in research facilities are still shrouded in the plastic they were delivered in. Trading docks are used only by the flourishing black market that the station's residents have come to rely on.\n\nSevastopol is a ghost town, and nobody cares.",
+            "audio":""
+        },
+        {
+            "id":107,
+            "title": "Reformat Chamber",
+            "author":"Russel",
+            "date":"September 15, 2137 00:00:00",
+            "content":"Spedding, I've set up some blank androids for the VIP Sevastopol sale tour. If you haven't done it before, just have them lie on the slab in the reformat chamber. It'll connect to APOLLO and upgrade them with the latest programming. Let's hope they bite. Russel.",
+            "audio":""
+        },
+        {
+            "id":111,
+            "title": "Showroom Appointments",
+            "author":"S. Archer",
+            "date":"September 15, 2137 00:00:00",
+            "content":"Sales showroom viewing appointments\n\nMonday: 0 appointments\nTuesday: 0 appointments\nWednesday: 0 appointments\nThursday: 0 appointments\nFriday: Date night\nSaturday: 0 appointments\nSunday: 0 appointments\n\nSeegson facility staff\nReception: Suzanne Archer\nLine Manager: Android Liaison Executive, Spedding",
+            "audio":""
+        },
+        {
+            "id":113,
+            "title": "Holding Out",
+            "author":"Russel",
+            "date":"December 11, 2137 00:00:00",
+            "content":"I don't know how many of you are still around to get this, but I've got weapons and supplies and I'm setting up shop outside the Synthetic Showroom. I'm hoping we'll be safe from the creature up here.\n\nSmythe is with me and waiting to be let up from the fluid plant reception. I still haven't seen Suzanne, if you're with her let me know.",
+            "audio":""
+        },
+        {
+            "id":115,
+            "title": "Tomorrow, Together #3",
+            "author":"Sebastian Sieg",
+            "date":"May 1, 2115 00:00:00",
+            "content":"Together Tomorrow: Seegson's Journey into Colonial Space\nAn official history, by Sebastian Sieg (first printed in \"Eye on Seegson\")\n\nOUR ASCENT TO SEVASTOPOL\n\nWhile Seegson prepared for its ascension into colonial space, its foothold was under construction. Sevastopol: A station with unparalleled potential, and a perfect position deep in deep space.\n\nSevastopol began as a freeport, built by Lorenz SysTech Development and funded by our friends at GeoFund Investor. The station's opening would, however, coincide with tumult in the space race. Years of mismanagement, and the re-routing of the Sol-Thedus flight path, left Sevastopol in real danger of being decommissioned.\n\nThankfully, Seegson were waiting in the wings to re-energize this station — among many others! In 2124 we arrived in Sevastopol — and made possible the buzzing cosmopolitan hub you see today!",
+            "audio":""
+        },
+        {
+            "id":119,
+            "title": "Hazard Containment Alert",
+            "author":"APOLLO systems",
+            "date":"December 11, 2137 00:00:00",
+            "content":"APOLLO would ask for your patience during the current: Hazard containment alert.\n\nWhich is currently at level: Omega.\n\nThank you.",
+            "audio":""
+        },
+        {
+            "id":127,
+            "title": "Power Delivery",
+            "author":"Chief",
+            "date":"December 3, 2137 00:00:00",
+            "content":"We need you down in reactor maintenance, Flores. I've got reports of localized brown-outs all over the station. I know it's going to hell on-station, but I can't see anything up here that would be compromising power delivery.\n\nCan you run a full systems check down there?\n\nChief",
+            "audio":""
+        },
+        {
+            "id":128,
+            "title": "I'm Coming to Find You",
+            "author":"'Chief' Porter",
+            "date":"December 7, 2137 00:00:00",
+            "content":"Flores, if you're still there, find somewhere safe and wait, I'm coming down to you. We need to stick together now. Sanders is dead and at least four other engineers are missing.\n\nOne of those damn androids nearly took my head off, so I've scavenged some parts together to make a weapon. It's got enough kick to punch a nice clean hole in one of those bastards.\n\nI'll be there as soon as I can.\n\nChief.",
+            "audio":""
+        },
+        {
+            "id":139,
+            "title": "Tomorrow, Together #4",
+            "author":"Sebastian Sieg",
+            "date":"June 1, 2115 00:00:00",
+            "content":"Together Tomorrow: Seegson's Journey into Colonial Space\nAn official history, by Sebastian Sieg (first printed in \"Eye on Seegson\")\n\nOur Synthetic Future\n\nWith the guidance of key Seegson executive talent, Sevastopol has become an outpost of progress: A trade hub, a vibrant community and the beating heart of the Seegson synthetic solution.\n\nSevastopol is the primary off planet site for the development, sales and maintenance of Seegson androids. From Sevastopol's unique position in the cosmos we can ship our range of Working Joes wherever they're needed in colonial space within months, not years.\n\nAbove and beyond our reliable and cost-efficient synthetic is Sevastopol's governing AI: Seegson's award-winning APOLLO system. Through the hard work of our scientists and Seegson's bold investments, the station is now a showcase for economical and self-governing artificial human operations. Even now our sales executives are overseeing the population of APOLLO mainframes across colonial space!\n\nJust as we assured you throughout the journey: We made it to tomorrow, and we did it together.",
+            "audio":""
+        },
         {
             "id":147,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Stability Alert",
+            "author":"Automated alert system",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Distruption to orbital stabilizers has been confirmed. Orbital stabilizer array back-ups are offline.\n\nSystems waiting for orbital emergency convenor response.",
+            "audio":""
+        },
         {
             "id":148,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Sevastopol Initialization",
+            "author":"Hope",
+            "date":"August 4, 2105 00:00:00",
+            "content":"I can now confirm that all Sevastopol systems are operational, and our KG-348 orbit is no longer degenerative. My thanks to the tow team.\n\nWe're open for business. Good luck everyone.",
+            "audio":""
+        }
+    ],
+
+    "audio":[
+        {
+            "id":7,
+            "title": "Kill the Power",
+            "author":"Waits",
+            "date":"December 5, 2137 00:00:00",
+            "content":"Harris? Turner? Get back here now. We have a track, somewhere in engineering. Lock the terminal down, kill the power, and don't forget your reports. Make them thorough. We're going to need our paperwork to be bulletproof when this shit is over. Waits out.",
+            "audio":"AI_UI_WAI_4626.ogg"
+        },
+        {
+            "id":8,
+            "title": "Terminal Riot",
+            "author":"Julia Jones",
+            "date":"December 2, 2137 00:00:00",
+            "content":"Julia Jones. Today's update. After numerous demands, Marshal Waits finally called a public meeting to address the rumors that have been circulating on Sevastopol. But instead of the answers we wanted, he continued to be evasive and after only a few minutes he and his team were pelted by projectiles from an angry crowd. A gun was fired, there was panic and now Waits and what's left of his team are forcibly ejecting us from the terminal. Feels like we're on our own now.",
+            "audio":"AI_UI_JUL_2284.ogg"
+        },
+        {
+            "id":12,
+            "title": "Last Power Coupling",
+            "author":"Turner",
+            "date":"December 5, 2137 00:00:00",
+            "content":"Harris? This is Turner. I found the last power coupling. Took me a while, but it's shut off now. Just fitting the last security brace. Come find me when you've shut yours down. Then we can get the hell out of here. Jesus, man... I'm hearing noises everywhere. Every creak and... Just hurry the fuck up, will you?",
+            "audio":"AI_UI_TUR_0001.ogg"
+        },
+        {
+            "id":13,
+            "title": "Another Break-In",
+            "author":"Turner",
+            "date":"December 4, 2137 00:00:00",
+            "content":"Harris? It's Turner. I had to deal with that wasted asshole again. This time he nearly wrecked the door with a Maintenance Jack. Guess he figures it's safe here, wants to lock himself in. Screw him. We've got too much to worry about without babysitting drunks. Anyway, I threw him in the evidence lock-up. Let the son of a bitch sleep it off.",
+            "audio":"AI_UI_TUR_0002.ogg"
+        },
+        {
+            "id":14,
+            "title": "Dead Soldiers",
+            "author":"Zach Watson",
+            "date":"December 8, 2137 00:00:00",
+            "content":"Hello? I wanna make a complaint. To the... highest authority, okay? My name is Zachary Watson. That's Watson, you get that? My complaint is this: The fucking Marshals. They should be protecting us, it's their job! Something's on the station with us and no one knows what it is, no one fucking knows! They put braces on the doors — lockdown. You know, like to keep something out! I'm fucking terrified, man. I'm fucking... Shit, it's so cold. I don't think this fucking thing even works.",
+            "audio":"AI_UI_ZAH_9219.ogg"
+        },
+        {
+            "id":15,
+            "title": "Interview: Heyst",
+            "author":"Waits",
+            "date":"November 28, 2137 00:00:00",
+            "content":"Interview subject: Heyst. Did I say that right? Heyst? Look, if you can't even tell me your name we're going to be here a hell of a long time. I just want to know about your boss. He's got you into a lot of trouble. Someone's got to be accountable. I'm gonna make damn sure someone's accountable. No? Tough guy, eh? Turner, turn off the tape. Maybe our friend here is just shy.",
+            "audio":"AI_UI_WAI_5181.ogg"
+        },
+        {
+            "id":19,
+            "title": "Leave Work Now",
+            "author":"Hughes",
+            "date":"December 1, 2137 00:00:00",
+            "content":"Marie, listen to me very carefully. I want you to leave work now, collect Claire, pick up the cat and head home. We need to find someplace safe until Seegson send a ship. I saw the guy from down the hall — can't remember his name, the one in the dirty baseball cap, weird smell — he had something in his coat, I think it was a gun. He just looked right through me. Don't talk to anyone. Don't tell them where you're going. I'll meet you as soon as I can.",
+            "audio":"AI_UI_HUG_3898.ogg"
+        },
+        {
+            "id":22,
+            "title": "Empty Box",
+            "author":"'Chief' Porter",
+            "date":"November 29, 2137 00:00:00",
+            "content":"Message for Marshal Waits. This is Chief Porter in Tech Support. Look, there's nothing on this flight recorder, Waits. We've broken God knows how many corporate confidentiality agreements and come up with zip — nothing except the Weyland-Yutani logo and an empty read-out. Now, these things are built to last, so either someone on board the Nostromo asked its mother core to wipe it clean, or somehow the data's been corrupted before it got here. Care to fill me in on why this was a priority job?",
+            "audio":"AI_UI_CHI_0002.ogg"
+        },
+        {
+            "id":26,
+            "title": "Please Understand",
+            "author":"Hughes",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Marie, if you get this, I'm making my way to Seegson Communications now. I didn't wake you because I knew you'd try to stop me. Please understand, this is our best shot. Someone's got to re-establish communications. We need to make sure the officials back at home know what's going on here. Don't worry about me. I'll be back. I'm not going to leave you and Claire alone.",
+            "audio":"AI_UI_HUG_7468.ogg"
+        },
+        {
+            "id":32,
+            "title": "Torrens Damage",
+            "author":"Verlaine",
+            "date":"December 11, 2137 00:00:00",
+            "content":"This is Verlaine on the Torrens. What the hell just happened? Sevastopol? Did any of our EVA team make it on board? Please respond. We've taken damage in the explosion and are pulling out of Sevastopol space. Systems will be down while we repair. I can't say for how long...",
+            "audio":"AI_UI_VER_6814.ogg"
+        },
+        {
+            "id":33,
+            "title": "RE: Torrens Hail",
+            "author":"Waits",
+            "date":"December 11, 2137 00:00:00",
+            "content":"This is Waits, Colonial Marshal at Sevastopol Station. We have a serious situation here. Non-local comms are down and we need you to send out an emergency message, do you read me? Repeat, our ranged communications are down and we need help. Stand off and send help.",
+            "audio":"AI_UI_WAI_5229.ogg"
+        },
+        {
+            "id":34,
+            "title": "Receipt of Transmission",
+            "author":"Taylor",
+            "date":"November 12, 2137 00:00:00",
+            "content":"Sevastopol, this is Weyland-Yutani executive administrator Nina Taylor, confirming receipt of your transmission. I am a member of the team assigned to collect the Nostromo flight recorder. The black box in your possession is of primary importance to Weyland-Yutani. Under existing corporate agreements we should remind you that you must not attempt to read its contents, nor disclose its presence to any third parties. We will be with you soon. A private message for Marshal Waits will follow.",
+            "audio":"AI_UI_TAY_1115.ogg"
+        },
+        {
+            "id":38,
+            "title": "Left Out of the Loop",
+            "author":"Kuhlman",
+            "date":"October 8, 2137 00:00:00",
+            "content":"I do not take kindly to being left out of the loop, Morley. You hear me? I tried to use the dispensary today and found I was locked out. I can't possibly be expected to carry out my duties if you and Lingard cut my access privileges. I have patients who will relapse without that medication, particularly when things on the station are so precarious. I will not see patient care suffer. Consider this a formal warning. And, for the record, I do not have a problem. Kuhlman out.",
+            "audio":"AI_UI_KUH_5526.ogg"
+        },
+        {
+            "id":48,
+            "title": "An Old Friend",
+            "author":"Ransome",
+            "date":"November 12, 2137 00:00:00",
+            "content":"Dr. Lingard, this is Ransome. Remember me? Your friendly chief executive? Lingard, you don't drop by, you don't call. Aren't we pals any more? Oh well, we're both busy people... And after all, I have lots of other friends. Some of them have badges. One of them told me you called Marshal Waits about a... shall we say... interesting find? I want in. No arguments. After all, how much does Waits really know about you? Not as much as your old friend here. And I bet he wouldn't be as understanding about black market med supplies. I look forward to your call, doc.",
+            "audio":"AI_UI_RAN_8031.ogg"
+        },
+        {
+            "id":50,
+            "title": "Tape Off the Scene",
+            "author":"Waits",
+            "date":"November 13, 2137 00:00:00",
+            "content":"Turner, we've had something go down here in San Cristobal. Tape off the scene and make sure it's not touched until Garcia comes in with forensics. Keep this quiet for now. I want total silence. Last thing this station needs is a panic. And one other thing — if I find out who leaked this to Ransome, I'll make them eat their fucking badge. He turned up, quoted Seegson privileges, and had a ringside seat for the whole God damn mess. This is a serious incident. I don't need Ransome making it more complicated. Waits out.",
+            "audio":"AI_UI_WAI_1941.ogg"
+        },
+        {
+            "id":55,
+            "title": "The Incident",
+            "author":"Lingard",
+            "date":"November 14, 2137 00:00:00",
+            "content":"Morley, it's Lingard. After the incident the Marshals want us to rope off medical. They're bringing in a team to find whatever it was the patient was carrying. I told them it was fast, but they're convinced they can trap it. They've got nets. I'll set up a temporary medical center outside. You're in charge for now. Don't let Kuhlman sweet-talk his way in. The last thing we need is him \"self medicating\" with Marshal Waits around.",
+            "audio":"AI_UI_LIN_8600.ogg"
+        },
+        {
+            "id":57,
+            "title": "Your Report",
+            "author":"Ransome",
+            "date":"September 11, 2137 00:00:00",
+            "content":"Smythe, I've been looking over your report on the Weyland-Yutani androids and your proposals for improving the Working Joes. Now, I appreciate the work you put in, but understand we live in different worlds. Yours is full of extrapolations and estimations. Mine has an executive suite and eight thousand dollar suits. Bottom line is: I've got to look after the money, buddy! I hired you because you were the cheapest, not the best. Find a way to bring these costs down, huh? Ransome out.",
+            "audio":"AI_UI_RAN_6504.ogg"
+        },
+        {
+            "id":61,
+            "title": "VIP Visit",
+            "author":"Spedding",
+            "date":"September 16, 2137 00:00:00",
+            "content":"Smythe, have you been practising the script for the VIPs visiting today? We need to impress. Noise from upstairs says they're the last potential bidders for Sevastopol's Working Joe roll-out. If they go with Weyland-Yutani cast offs instead, the jobs Seegson have allocated for us back on Earth are on the line. Don't screw up. Spedding out.",
+            "audio":"AI_UI_SPE_8431.ogg"
+        },
+        {
+            "id":65,
+            "title": "Last Bidders",
+            "author":"Spedding",
+            "date":"September 17, 2137 00:00:00",
+            "content":"Smythe, it's Spedding. You knew full well that these guys were the last bidders for Sevastopol's APOLLO system, and you totally fucked the android presentation. They're not interested. So no bonus for me, no half-share for you, and God only knows what it means for the suits upstairs. That's got me pissed. But do you know what's got me even more pissed? I have to stay on Sevastopol to oversee the synthetic shut-down — while you go home. Don't have nightmares on the trip back, jackass.",
+            "audio":"AI_UI_SPE_6793.ogg"
+        },
+        {
+            "id":69,
+            "title": "We Need Supplies",
+            "author":"Sinclair",
+            "date":"December 9, 2137 00:00:00",
+            "content":"Guys it's Sinclair. We need supplies. Take what you can from whoever you want. I found an area in habitation where we can seal ourselves in and wait for rescue. I've got guys wielding vents and shutting off elevators. The plan is to make it watertight. There's no room for more people in the sanctuary, but we can make space for food, meds, water and guns. If we're going to get through this alive there's no room for pity.",
+            "audio":"AI_UI_SIN_0020.ogg"
+        },
+        {
+            "id":76,
+            "title": "I Can't Tell Who Escaped",
+            "author":"Winters",
+            "date":"December 9, 2137 00:00:00",
+            "content":"I am recording this for anyone else who was away when it happened. I can't tell who escaped, there are some bodies but... the others were taken through the vents. One by one. The doors were locked, but the ceiling vents were open. There was nowhere to run, and no one to let them out. It was like a fox dropping into a henhouse. You and I — we have two options: There's a camp of survivors who still trust the Marshals in the mall, and then there's Sinclair and his idiot men with guns somewhere in habitation. I doubt either will last a week.",
+            "audio":"AI_UI_WIN_3275.ogg"
+        },
+        {
+            "id":84,
+            "title": "Transmission Relay Archive",
+            "author":"Ransome",
+            "date":"November 24, 2137 00:00:00",
+            "content":"Hughes, it's Ransome — I just got your query. Yes, I have been in our transmission relay archive and I've done some decrypting. I'm looking for crew logs that passed through Sevastopol a while ago. I know you're concerned, but it's ancient history. It's just some stuff I need to know: A routine Company transmission packet sent from the edge of Thedus before a ship started its trip home. Nothing that's gonna break anything. Still, no one else needs to know about it, right? If you talk — well, there'll be consequences. I mean, there's plenty Marie doesn't know, right? Leave them decoding and let me know when they're done. We can keep this civil.",
+            "audio":"AI_UI_RAN_4885.ogg"
+        },
+        {
+            "id":92,
+            "title": "Samples",
+            "author":"Ransome",
+            "date":"November 16, 2137 00:00:00",
+            "content":"Seegson executive Ransome here. I'm sending over some samples for investigation. I want the minimum number of employees on this. Keep it on the down-low and report only to me. If any of this gets out, I'll make sure your career dies with Sevastopol. There are a lot of inconsistencies in Gemini's ledgers. Do right by me and I'll remember you. Whatever you're skimming now will seem like chicken feed. Do the smart thing.",
+            "audio":"AI_UI_RAN_7676.ogg"
+        },
+        {
+            "id":95,
+            "title": "No Future",
+            "author":"Julia Jones",
+            "date":"December 7, 2137 00:00:00",
+            "content":"I don't know when anyone will get this, but someone needs to keep a record and I don't know... I came here a few months ago to write about the collapse of a dream, a future gone sour. For me, the people here were little more than footnotes for my article: Something to tug at the heartstrings. And when the disappearances started, oh, I was thrilled. This was something big. But now people are afraid and a communications fault means we're alone. I'm trapped here, just like everybody else. Another footnote. Another victim.",
+            "audio":"AI_UI_JUL_2629.ogg"
+        },
+        {
+            "id":101,
+            "title": "Low Profile",
+            "author":"Heyst",
+            "date":"November 26, 2137 00:00:00",
+            "content":"Meeks, I'm leaving this for you when you wake up. I know that you're still all over the place after that thing came out of Foster, but you've got to stop fucking up like this. You got way too drunk, and told these people sleeping in the mall way too much. I dragged you away when I saw the look in their eyes. We can't go back there again. No one can know we're connected to Marlow and the Anesidora. I'll come back once you've dried out.",
+            "audio":"AI_UI_HEY_5831.ogg"
+        },
+        {
+            "id":102,
+            "title": "Retirement Plan",
+            "author":"Ransome",
+            "date":"November 20, 2137 00:00:00",
+            "content":"Waits, we should talk about what happened in San Cristobal. Now, it was a nasty business and I understand that you want to deal with it as quietly and quickly as possible, but I wanted to make sure you didn't do anything rash. I'm talking about catching the specimen without killing it. If we play it smart, we could be set up for life. I have the connections, Waits. I can set it up. You're getting old, Waits, you can't do this forever and what are you going to do when Sevastopol closes? You have my number. Ransome out.",
+            "audio":"AI_UI_RAN_3315.ogg"
+        },
+        {
+            "id":104,
+            "title": "Some Kind of Parasite",
+            "author":"Lingard",
+            "date":"November 12, 2137 00:00:00",
+            "content":"Waits, it's Dr. Lingard. I've just examined a patient with — well, I've never seen anything like it. It's some kind of unknown parasite. I did a quick check on the name they gave me and there's no one registered under it at Sevastopol. I think she came on board recently. Do you know anything about this? I have no idea what Sinclair and his men were doing, but this should have been picked up during quarantine. Who knows what else they've let through? The patient and her captain are waiting for me in the examination room. Get down here, now.",
+            "audio":"AI_UI_LIN_5458.ogg"
+        },
+        {
+            "id":99,
+            "title": "People Are Scared",
+            "author":"Winters",
+            "date":"December 10, 2137 00:00:00",
+            "content":"I have been camped out in Galleria Mall for maybe twenty-four hours. The people here, they are scared, but they still believe that Marshal Waits will kill the creature. They forget other dangers. They forget themselves. People are turning on each other for food, for water. I cannot stay here.",
+            "audio":"AI_UI_WIN_1256.ogg"
+        },
+        {
+            "id":108,
+            "title": "Investigations",
+            "author":"Ransome",
+            "date":"November 26, 2137 00:00:00",
+            "content":"This is Seegson executive Ransome speaking. I just woke up to find a Working Joe in my suite and when I asked what the hell it was doing it lunged for me. I had to leave my own fucking apartment! Send your best technicians to APOLLO core and find out what the hell is going on, now! Get those things under control, I want a full report ASAP.",
+            "audio":"AI_UI_RAN_7496.ogg"
+        },
+        {
+            "id":114,
+            "title": "White on Red",
+            "author":"Spedding",
+            "date":"November 27, 2137 00:00:00",
+            "content":"This is Spedding in Android Processing. We've got a situation — we have white-on-red casualties on station. I've just had an android report to the APTC with head trauma — but he's covered in blood. Human blood. I've alerted the Marshals, put my secretary someplace safe, and right now I'm headed for the transit. I'm going to get a Working Joe to consult APOLLO. Maybe it knows who the hell is to blame for this.",
+            "audio":"AI_UI_SPE_2855.ogg"
+        },
+        {
+            "id":116,
+            "title": "Hazard Containment",
+            "author":"Spedding",
+            "date":"November 28, 2137 00:00:00",
+            "content":"I've come over to APOLLO to find out what sent the synthetics crazy. This place has gone to hell. APOLLO's redirected core android duties, and they've just walked away from the maintenance we requested after we got the news. Coolant's everywhere, gas has escaped, and the primary access lift has itself shut down. I've flagged a help request, but apparently I'm forty-fifth in the line. Systems are suddenly obsessed with hazard containment. I'm going to find a way down. Spedding out.",
+            "audio":"AI_UI_SPE_1879.ogg"
+        },
+        {
+            "id":118,
+            "title": "Something Up with Your Synthetics",
+            "author":"'Chief' Porter",
+            "date":"November 25, 2137 00:00:00",
+            "content":"Hey, it's Chief. There's something wrong with your synthetics. The team I requisitioned to asset-strip lower habitation just stopped in their tracks. They barked something about a hazard containment order, tried to get into my control booth and then just marched off. I know I always complain about those spooky, bald bastards, but now I've got proof their wiring's faulty. I've got a meeting with your boss Spedding tomorrow, and I'm going to kick some ass. So when he starts kicking your ass... Well, it's coming from me.",
+            "audio":"AI_UI_CHI_0010.ogg"
+        },
+        {
+            "id":120,
+            "title": "Sold!",
+            "author":"Ransome",
+            "date":"November 17, 2137 00:00:00",
+            "content":"Spedding, something crazy just happened. Sevastopol is off the market. We got a buyer. After all those endless presentations and tours, I guess the talks weren't stalled at all. Someone at company headquarters just had to click his fingers. A message of confirmation just came in, APOLLO's currently receiving a packet of new operation rulesets, so I guess the deal's sealed. This is board level, need-to-know stuff until it's announced to shareholders. Quite the promotion, huh?",
+            "audio":"AI_UI_RAN_8606.ogg"
+        },
+        {
+            "id":123,
+            "title": "They're at the Door",
+            "author":"Spedding",
+            "date":"November 30, 2137 00:00:00",
+            "content":"I'm in APOLLO. There are... androids at the door. Ransome's nowhere to be seen. There are conflicts with the hazard containment breach. Synthetic safety procedures are getting bypassed left and right. Comms are offline. I thought it was random, but now I'm not so sure. Oh God, they're gonna get in. Tell Suzanne I love her.",
+            "audio":"AI_UI_SPE_3227.ogg"
+        },
+        {
+            "id":122,
+            "title": "Twisting in the Wind",
+            "author":"Ransome",
+            "date":"December 9, 2137 00:00:00",
+            "content":"This is Seegson executive Ransome, reporting in to the board. You sons of bitches. I was loyal to you and you cheap bastards left me twisting in the wind. I was going to give you the find of a lifetime. I was willing to risk my life for the company. I could have called in a special team, secured the specimen and we all would have been happy. But APOLLO has cut all communications. None of the technicians in APOLLO core are answering my messages. We're all dying here, you bastards! You threw it all away! Fuck you and fuck your company! Fuck you!",
+            "audio":"AI_UI_RAN_6663.ogg"
+        },
+        {
+            "id":125,
+            "title": "Missing Engineer",
+            "author":"Chief",
+            "date":"December 1, 2137 00:00:00",
+            "content":"Chief here. Something weird's happening. Synthetics are on the fritz, so I found some guys to help me out. I sent out one of them into the manufacturing room, but he never came out. Every door's locked, and he sure as hell couldn't fit through the air vent without a fight. We don't know what to do. It doesn't seems right to keep working without looking for him, but there's nowhere to look. Our shift's over soon. I'll report the incident to Waits and the Marshals.",
+            "audio":"AI_UI_CHI_0030.ogg"
+        },
+        {
+            "id":126,
+            "title": "I Saw It",
+            "author":"'Chief' Porter",
+            "date":"December 6, 2137 00:00:00",
+            "content":"I saw it. It had its back to me — walking down a corridor like it was the most natural thing in the world. I hid, but when I looked up it wasn't there. I think it went into the floor. Maybe the the ceiling. Sevastopol's a maze. It could be living anywhere. This must be what the Marshals have been chasing. This shouldn't have been kept from me. Chief out.",
+            "audio":"AI_UI_CHI_0020.ogg"
+        },
+        {
+            "id":130,
+            "title": "Let Me Be a Friend to You",
+            "author":"Julia Jones",
+            "date":"November 15, 2137 00:00:00",
+            "content":"Dr. Lingard, my name is Julia Jones and I'm a writer covering Sevastopol's decommissioning. I was hoping to interview you about your experiences on the station... You know, the limited medical resources, the mental effects on patients in deep space, that kind of thing? But look, doctor, I've heard there was some kind of incident in the hospital recently. No one seems to know anything. Doctor, if there's a major public health issue here on Sevastopol, people need to know. I'm freelance, unbiased. I don't have any corporate affiliations. I'll take any statement you'd care to give me. Call me.",
+            "audio":"AI_UI_JUL_4486_ALT.ogg"
+        },
+        {
+            "id":131,
+            "title": "Feeling Lucky",
+            "author":"Foster",
+            "date":"October 20, 2137 00:00:00",
+            "content":"I think we may have broken our losing streak. We've barely been scraping a living the past couple of years and the Anesidora is starting to look like the wrecks we salvage. Can't say the crew's been faring any better. Then we found that flight recorder. It belongs to a ship, the Nostromo. Weyland-Yutani property. That means there'll be a reward. But then Marlow had an even better idea: Extrapolate the path of the flight recorder to try to find the wreck of the Nostromo. We got lucky, found a distress signal and now we're following it. This is it. I can feel it in my bones. He always said he'd do right by me.",
+            "audio":"AI_UI_FOS_9668.ogg"
+        },
+        {
+            "id":133,
+            "title": "Approaching Sevastopol",
+            "author":"Heyst",
+            "date":"November 11, 2137 00:00:00",
+            "content":"We're outside Sevastopol. Marlow and Foster woke up first. She looked terrible. Meeks and me are about to take a shuttle to the station. But, well, this has got to break quarantine procedures, right? It's Marlow's ship, she's Marlow's wife. Things got heated and Meeks got a bloody nose. So... I don't know... Maybe the doctors will give her the all-clear and things can get back to normal. But if they sniff it out when we get on board, I don't want any part of it. Marlow doesn't pay nearly enough for that kind of noise.",
+            "audio":"AI_UI_HEY_5845.ogg"
+        },
+        {
+            "id":136,
+            "title": "Anesidora Hail",
+            "author":"Waits",
+            "date":"November 11, 2137 00:00:00",
+            "content":"Anesidora, this is Marshal Waits of Sevastopol. Officially, I should deny your request to dock. Sevastopol is currently being decommissioned and I can't compromise security for unscheduled vessels. However... in the light of the property you found I will allow a small number of your crew to dock via a short-range shuttle. I must remind you that Sevastopol is entitled to a cut of any reward for return of said-property once it's on station. Let me know your decision. Waits out.",
+            "audio":"AI_UI_WAI_7674.ogg"
+        },
+        {
+            "id":72,
+            "title": "Removal of Transit",
+            "author":"W. 'Chief' Porter",
+            "date":"October 9, 2137 00:00:00",
+            "content":"Chief here. As requested, I've resubmitted my report for the removal of the transit system for use elsewhere once Sevastopol's been closed off. I still don't see how it's possible. I know Seegson is trying recoup as much investment as it can on this place, but the thing is trashed. Junctions have rusted through, major safety protocols have been ignored for years... It's a wreck. Nothing short of a miracle has stopped it killing off half the population.",
+            "audio":"AI_UI_CHI_0001.ogg"
+        },
+        {
+            "id":66,
+            "title": "Cutting Ties",
+            "author":"Sinclair",
+            "date":"December 2, 2137 00:00:00",
+            "content":"This is a message for all members of the Seegson Security team. There's been an altercation in the Spaceflight Terminal. Waits doesn't have our back. As of right now no one hired as Seegson Security is going on-shift. We're cutting ties with the Marshals and everyone else on-station. It's time to take care of our own. I'm going to find someplace safe for everyone to hole up. Money's dried up here. We don't owe these people nothing.",
+            "audio":"AI_UI_SIN_0010.ogg"
+        },
+        {
+            "id":41,
+            "title": "Prep the Patients",
+            "author":"Waits",
+            "date":"October 6, 2137 00:00:00",
+            "content":"Dr. Morley, this is Marshal Waits. Make sure all your patients are prepped for the decommission. That means full documentation, personal effect, and any meds they'll need during the journey. I'm scheduling shuttles to transfer them to the medical ship for transportation. I strongly recommend placing the more volatile patients into early hypersleep prior to transfer. I don't want to hear your complaints. I don't have the manpower to guarantee protection for everyone if any of them decide to kick off. Pharms or hypersleep, I don't care. Just get them subdued. That's just the way it's got to be. Waits out.",
+            "audio":"AI_UI_WAI_3331.ogg"
+        },
+        {
+            "id":146,
+            "title": "Goodbye",
+            "author":"Mike Tanaka",
+            "date":"December 8, 2137 00:00:00",
+            "content":"Anne, I am so sorry. You were right, I never should have come here. Please tell Beth and Heidi, tell them that I love them more than anything. God, it hurts so much. I found something, Anne. I don't know what it was, but I found it and now it's killed me. It's killing everyone. I have to tell someone... There has to be a record. I was so stupid, Anne. I should have stayed with you. I wish... I wish...",
+            "audio":"AI_UI_MIK_0030.ogg"
+        },
+        {
+            "id":137,
+            "title": "Journal Entry #340",
+            "author":"Axel",
+            "date":"December 8, 2137 00:00:00",
+            "content":"Axel's journal entry 340 — Right, got to be quiet now. I've found a small hideaway in the Spaceflight Terminal. Not exactly five-star, but it's cosy enough. I filled a bag with essentials and picked up a few things on the way, making sure I didn't run into anyone. Too many people with guns on Sevastopol now, shooting at shadows. I mean, I have one myself but I'm not fucking insane. At least here it's secluded and I'm close to the terminal. So, if there's a chance of a ship arriving I'll get a front seat.",
+            "audio":"AI_UI_AXE_2468.ogg"
+        },
+        {
+            "id":140,
+            "title": "Bet on the Wrong Horse",
+            "author":"Sinclair",
+            "date":"December 11, 2137 00:00:00",
+            "content":"This is Sinclair. You guys took too long down there — I had to power down this facility and take the last transit. We can't afford to keep the sanctuary wide open. All it'll take is one creature to get in — and all the supplies and weapons we've taken will come to jack shit. Me and mine are gonna sit this out till the rescue comes. I'm sorry... I'm sorry, but when you started chasing after a ship that'll never come you broke with the plan. Sinclair out.",
+            "audio":"AI_UI_SIN_0040.ogg"
+        },
+        {
+            "id":141,
+            "title": "Nowhere to Run",
+            "author":"Winters",
+            "date":"December 11, 2137 00:00:00",
+            "content":"I got here when they were sealing the sanctuary. I don't know what I expected, maybe that they'd change their minds and let me in, maybe that they'd shoot me dead like everyone else on the station who gets in their way. They shut the door in my face. I can hear movements from the floor below me. I haven't got long. Sinclair and his people have Sevastopol's food supplies and much of its weaponry, but I heard the voices of children too. I'd wondered where the children had gone. Maybe they can keep these monsters from them. I hope they do.",
+            "audio":"AI_UI_WIN_3148.ogg"
+        },
+        {
+            "id":142,
+            "title": "Sealed In",
+            "author":"Sinclair",
+            "date":"December 11, 2137 00:00:00",
+            "content":"If you're listening to this, and you're on the team, we've sealed the habitation sanctuary. There's one way in, one way out. I've still got raiding parties heading out to loot supplies and weapons, but it looks like we shut it off just in time. The Seegson synthetics have started moving away from their stations. I've seen a trail of strangled bodies in public areas. So, be aware. Oh, and if you're listening to this, and you're not on the team, don't come find us. We will shoot.",
+            "audio":"AI_UI_SIN_0030.ogg"
+        },
+        {
+            "id":145,
+            "title": "Blood on My Hands",
+            "author":"Sinclair",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Last will and testament of some fuck you don't give a shit about. We couldn't keep them out. My wife is dead. My children have been taken. I tried, but I couldn't stop them. They broke through our defences. There's... There's so much blood on my hands. This is for the rescue party, for Seegson or... I don't know... whoever has to clean up this mess. We held out in here as long as we could. You didn't come fast enough. You fucked it. Just send in the Marines or blow this place up. Take these creatures back to hell.",
+            "audio":"AI_UI_SIN_0050.ogg"
+        }
+    ],
+
+    "nostromo":[
+        {
+            "id":1,
+            "title":"An Initial Report",
+            "author":"Dallas",
+            "date":"",
+            "content":"This is Captain Dallas, logging an initial report from the return leg of our Thedus voyage. When we get back home I want a meeting with a shipping coordinator. My usual science officer has been replaced — no reason given. The new guy is more than capable, I'm sure, but only getting two days notice for this kinda thing is crazy. I'd just like an explanation. We'll be ready for our load when we get the call. Dallas, Nostromo captain, signing off.",
+            "audio":""
+        },
+        {
+            "id":2,
+            "title":"Science Officer Reporting",
+            "author":"Ash",
+            "content":"Science officer's initial log. I've been installed aboard the Nostromo. All the relevant paperwork has been signed and I have access to the ships MU/TH/UR 6000 mainframe. Captain Dallas and the executive officer seem... put out by my appearance, but that's perhaps to be expected. All that's left is to hope for a productive journey. Ash signing off.",
+            "audio":""
+        },
+        {
+            "id":3,
+            "title":"Delayed Pick-Up",
+            "author":"Lambert",
+            "date":"",
+            "content":"This is Lambert confirming the delayed pick-up of the refinery we're taking back to Earth. I've entered initial coordinates for the edge of Epsilon Reticuli using the established haulage route. My next entry will be confirmation of our flightplan to the Sol system. Lambert out.",
+            "audio":""
+        },
+        {
+            "id":4,
+            "title":"Overworked and Underpaid",
+            "author":"Parker",
+            "date":"",
+            "content":"Ripley's asked me to log a report on what happened to the umbilicus when we hooked up unto the refinery. I'll tell you what happened: Me and Brett, we're holding this place together with our bare arms. You'd think millions of tons of ore would get someone from the front deck, someone on a full share, down here with us. Y'know, checkin' up on the stuff we need. You want to get out of the system on schedule next time? You put the Nostromo in drydock for a month, you wait till we're done with it, you pay what we're due. Parker out.",
+            "audio":""
+        },
+        {
+            "id":5,
+            "title":"System Check Went OK",
+            "author":"Dallas",
+            "date":"",
+            "content":"Sounds like the system check went okay. Some ducts still need rerouting but, as I keep getting told, there's not much we can do about it while the Nostromo is in the air. Parker's coming up with the sign-off sheets, but I know Ripley wants to chew his ear about the secondary load unit. I'm gonna stay out of it for now, they know what they're doing. Dallas, Nostromo captain, signing off.",
+            "audio":""
+        },
+        {
+            "id":6,
+            "title":"The Secondary Load Unit",
+            "author":"Parker",
+            "date":"",
+            "content":"We're heading to the edge of the system. Ripley's given me a list of stuff she says needs doing, says Mother's not gonna let us hit the gas if we don't fix the secondary load unit. Helluva lot of work for the routine flight. Dallas, if you somehow found the time in your schedule to listen in on this, Brett and me — we're working double-time. If you don't come with a good bonus we'll be taking it to the union.",
+            "audio":""
+        },
+        {
+            "id":7,
+            "title":"Finishing Up Here",
+            "author":"Brett",
+            "date":"",
+            "content":"Right. Finishing up here. Kane asked if we could fix it so the heating came on before we get outta the ole freezerinos. Parker said no way — not our job. Next they'll be asking for monogrammed towels and a massage. So we didn't do that: We told them that. Brett — over and out.",
+            "audio":""
+        },
+        {
+            "id":8,
+            "title":"Antarctica Control Will Get Our Call",
+            "author":"Lambert",
+            "date":"",
+            "content":"This is Lambert, navigator on the USCSS Nostromo registering that all navigation beacons and Sol system co-ordinates have now been verified by Mother. Antarctica traffic control will get our call on October 22nd, or a few hours on either side. Signing off.",
+            "audio":""
+        },
+        {
+            "id":9,
+            "title":"Health Checks",
+            "author":"Ash",
+            "date":"",
+            "content":"Pre-hypersleep health checks have been performed on the entire crew including, after some persistence from the engineer's staff, the ship's cat. Everyone regular, present and correct — as set out in the report I've just logged with Mother. I have a little more work to do setting up my equipment and initializing systems, but otherwise: We're ready to go.",
+            "audio":""
+        },
+        {
+            "id":10,
+            "title":"Nostromo Report Packet",
+            "author":"Dallas",
+            "date":"",
+            "content":"This is Dallas, I'm about to broadcast the Nostromo report packet back to the sol system before we hit the pods. Nearest open relay station looks to be Sevastopol. All things being well — you'll hear from us once we reach the edge of Sol. Don't miss us too much. Dallas out." ,
+            "audio":""
+        }
+    ],
+
+
+    "undefined":[ 
         {
             "id":149,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Transit Office Code",
+            "author":"Unknown civilian",
+            "date":"December 11, 2137 00:00:00",
+            "content":"*Code for the transit office is 0482 if you need supplies*",
+            "audio":""
+        },
         {
             "id":150,
-            "title":"",
-            "content":"",
-			"audio":""
-		},
+            "title": "Code on Blueprint",
+            "author":"APOLLO blueprint",
+            "date":"December 11, 2137 00:00:00",
+            "content":"*Try to remember this time*\n4930",
+            "audio":""
+        },
         {
             "id":151,
-            "title":"",
-            "content":"",
-			"audio":""
+            "title": "Torrens Co-Ordinates",
+            "author":"Observatory chamber",
+            "date":"December 11, 2137 00:00:00",
+            "content":"Co-ordinate conversion input:\n35\n75",
+            "audio":""
         }
     ]
 }

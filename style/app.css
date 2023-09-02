@@ -3,6 +3,7 @@
     --foreground: #01b454;
     --mid-green: #04451d;
     --code:  #7dc4be;
+    --orange: #ffc65c;
 }
 
 html{
@@ -92,6 +93,11 @@ html{
 .retro-code{
     font-family: 'Sevastopol-Interface';
     color: var(--code);
+}
+
+.retro-orange{
+    font-family: 'Sevastopol-Interface';
+    color: var(--orange);
 }
 
 .disabled-focus{
