@@ -1,8 +1,21 @@
 export class Root{
+
     filePointer;
     folders;
     currentFolder;
+    running;
 
+    static document;
+    static controls = {
+        "forward" : 90,
+        "backward" : 83,
+        "left" : 81,
+        "right" : 68,
+        "use": 69,
+        "return" : 65,
+        "page-up" : 33,
+        "page-down" : 34
+    };
 
     constructor(folders, filePointer){
         this.folders = folders;
@@ -11,7 +24,76 @@ export class Root{
         this.#preselectFolder(this.currentFolder);
         this.currentFolder.setupFiles();
         this.fileSelectionAudio = 0.3;
+
+        this.running = false;
+
+        document.addEventListener('keydown', async (pressedKey) => {
+            if(this.running){
+
+                if(pressedKey.repeat){
+    
+                }else{
+                    switch(pressedKey.keyCode){
+                        case Root.controls["forward"]:
+                            if(!this.currentFolder.isSelected){
+                                //move folder above
+                                this.preselectAboveFolder();
+                                this.currentFolder.setupFiles();
+                            }else{
+                                //move file above
+                                this.currentFolder.selectAboveFile();
+                            }
+    
+                            break;
+        
+                        case Root.controls["backward"]:
+                            if(!this.currentFolder.isSelected){
+                                //move folder below
+                                this.preselectBelowFolder();
+                                this.currentFolder.setupFiles();
+                            }else{
+                                //move file below
+                                this.currentFolder.selectBelowFile();
+                            }
+                            break;
+                        
+                        case Root.controls["use"]:
+                            if(!this.currentFolder.isSelected){
+                                //select folder and file 1
+                                this.currentFolder.unpreselect();
+                                this.currentFolder.select();
+                                this.currentFolder.currentFile.select();
+                            }else{
+                                //trying to select a file with no success
+                                if(this.currentFolder.currentFile.audio){
+                                    //a changer
+                                    if(this.currentFolder.previousFile){
+                                        this.currentFolder.previousFile.stop();
+                                    }
+                                    this.currentFolder.currentFile.audio.play();
+                                }else{
+                                    this.currentFolder.currentFile.bip();
+                                }
+                            }
+                            break;
+                        case Root.controls["return"]:
+                            if(this.currentFolder.isSelected){
+                                //unselect folder
+                                this.currentFolder.unselect(false);
+                                this.currentFolder.currentFile.unselect();
+                            }else{
+                                //return to sign in
+                                display(menu, 'none');
+                                await runMosaicTransition();
+                                location.reload();
+                            }
+                            break;
+                    }
+                }
+            }
+        });
     }
+
 
     getAboveFolder(){
         let index = this.#getCurrentFolderIndex();

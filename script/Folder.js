@@ -1,15 +1,16 @@
 import { ArchiveLog } from "./ArchiveLog.js";
 
 export class Folder{
+    name;
     element;
     files;
     currentFile;
     previousFile;
     isSelected;
     isEnable;
-    
     borders;
     
+    static archiveLogsJSON;
     static fileListElement = document.getElementById('archive-log-list');
     static selectAudio = new Audio('SFX/Interactive_Terminal_Telem_01.ogg');
     static preselectAudio = new Audio('SFX/Interactive_Terminal_Telem_04.ogg');
@@ -20,12 +21,14 @@ export class Folder{
         Folder.preselectAudio.volume = 0.3;
     }
 
-    constructor(element, borders){
+    constructor(name, element, borders){
         this.element = element;
         this.files = [];
         this.isSelected = false;
         this.currentFile = this.files[0];
         this.borders = borders;
+        this.name = name;
+        this.addArchiveLogs();
     }
     
     setupFiles(){
@@ -48,18 +51,28 @@ export class Folder{
         return div;
     }
 
-    addArchiveLogs(logsJSON){
+    addArchiveLogs(){
+        var logsJSON = Folder.archiveLogsJSON[this.name];
         var log;
         var audio;
-        for(let i = 0; i<logsJSON.length; i++){
-            log = logsJSON[i];
-            audio = log['audio'];
-            if(audio.length == 0){
-                this.files.push(new ArchiveLog(log['id'], log['title'], log['content']));
-            }else{
-                this.files.push(new ArchiveLog(log['id'], log['title'], log['content'], audio));
+        
+        if(logsJSON == undefined){
+            this.files.push(new ArchiveLog(11, 'gdg', 'gfdsg'));
+        }else{
+            for(let i = 0; i<logsJSON.length; i++){
+                log = logsJSON[i];
+                audio = log['audio'];
+                if(audio.length == 0){
+                    this.files.push(new ArchiveLog(log['id'], log['title'], log['content']));
+                }else{
+                    this.files.push(new ArchiveLog(log['id'], log['title'], log['content'], audio));
+                }
             }
+            
         }
+        console.log(this.files)
+
+    
     }
 
     #toggleBorders(turnon = true){
