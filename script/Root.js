@@ -68,7 +68,7 @@ export class Root{
                                 if(this.currentFolder.currentFile.audio){
                                     //a changer
                                     if(this.currentFolder.previousFile){
-                                        this.currentFolder.previousFile.stop();
+                                        this.currentFolder.previousFile.stopAudio();
                                     }
                                     this.currentFolder.currentFile.audio.play();
                                 }else{

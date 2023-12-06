@@ -1,11 +1,8 @@
 .menu{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
-    top: 0;
-    left: 0;
-
-    position: absolute;
+    /*position: absolute;*/
     display: none;
     background-color: var(--background);
 

@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEVASTOLINK</title>
 
+    
     <link rel="stylesheet" href="style/app.css">
-    <link rel="stylesheet" href="style/mosaic.css">
-    <link rel="stylesheet" href="style/menu.css">
+    
+    <link rel="stylesheet" href="style/mosaic-loading.css">
 
+    <link rel="stylesheet" href="style/sign-in.css">
+    <link rel="stylesheet" href="style/loading-page.css">
+    <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/ArchiveLog.css">
     <link rel="stylesheet" href="style/Folder.css">
+
 
     <script type="text/javascript" src="script/app.js"></script>
     <script type="text/javascript" src="script/async.js"></script>
 </head>
 <body>
 
-    <div id="mosaic" class="mosaic"></div>
+    <div id="mosaic-loading" class="mosaic-loading"></div>
     <script>
-        var mosaic =  document.getElementById('mosaic');
+        var mosaic_loading =  document.getElementById('mosaic-loading');
         var test = '<div class="tile-wrapper"><div class="tile"></div></div>'
         for(let i = 0; i<170; i++){
-            mosaic.innerHTML += test;    
+            mosaic_loading.innerHTML += test;    
         }
     </script>
 
@@ -32,6 +37,7 @@
             </div>
     </div>
 
+    <!-- loading page -->
     <div id="loading-page" class="loading-page">
 
         <div class="logo">
@@ -50,7 +56,8 @@
         </div>
     
     </div>
-
+    
+    <!-- menu -->
     <div id="menu" class="menu">
         <div class="title-bar retro-white">
             <label class="retro-black fz30">PERSONAL TERMINAL</label>
@@ -109,8 +116,8 @@
 
         const signin = document.getElementById('sign-in');
         
-        const mosaic = document.getElementById('mosaic');
-        const children = mosaic.children;
+        const mosaic_loading = document.getElementById('mosaic-loading');
+        const children = mosaic_loading.children;
 
         const loadingPage = document.getElementById('loading-page');
         const progressbar = document.getElementById('progress');
@@ -130,12 +137,12 @@
         const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder], get('file-pointer'));
 
         async function runMosaicTransition(){
-            display(mosaic, 'grid');
+            display(mosaic_loading, 'grid');
             for(let i=0; i<170; i++){
                 children[i].firstChild.style.animationPlayState = 'running';
             }
             await delay(200);
-            display(mosaic, 'none');
+            display(mosaic_loading, 'none');
         }
 
         const startup = new Audio('SFX/Interactive_Terminal_Startup.ogg');
@@ -146,8 +153,8 @@
         loop.loop = true;
 
         //(async () => {
-            
-            //1
+           
+        //1
         await waitForKey('e', true);
         display(signin, 'none');
         loop.play();
@@ -162,6 +169,8 @@
         animationState(progressbar, true);
         startup.play();
         
+        
+
         await delay(5500);
         loop.volume = 0.045;
         display(loadingPage, 'none');

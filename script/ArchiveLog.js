@@ -33,11 +33,7 @@ export class ArchiveLog{
         this.element = this.#createElement();
     }
 
-    play(){
-        this.audio.play();
-    }
-
-    stop(){
+    stopAudio(){
         if(this.audio){
             if(!this.audio.ended){
                 this.audio.pause();

@@ -1,0 +1,70 @@
+.loading-page {
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+
+    /*position: absolute;*/
+    box-sizing: border-box;
+
+    place-items: center;
+
+    display: none;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 35%;
+    grid-row-gap: 5%;
+    }
+    
+.logo { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.company-name{
+    margin-top: 0;
+    text-align: right;
+    font-size: 20px;
+}
+
+.progress-bar-wrapper { 
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.progress-bar{
+    height: 26px;
+    width: 880px;
+
+    margin: 0 auto;
+
+    border: solid 3px var(--foreground);
+}
+
+.progress{
+    height: 100%;
+    width: 0%;
+
+    background-color: var(--foreground);
+
+    animation: progressing 3.5s;
+    animation-timing-function: steps(1);
+    /*animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes progressing{
+    from{ width: 0%; }
+    7%{ width: 7%; }
+    27%{ width: 27%; }
+    52%{ width: 52%; }
+    60%{ width: 60%; }
+    80%{ width: 80%; }
+    90%{ width: 90%; }
+    to{ width: 100%; }
+}
