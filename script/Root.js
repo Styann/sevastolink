@@ -1,9 +1,9 @@
 export class Root{
 
-    filePointer;
-    folders;
-    currentFolder;
-    running;
+    static filePointer;
+    static folders;
+    static currentFolder;
+    static running;
 
     static document;
     static controls = {
@@ -17,127 +17,60 @@ export class Root{
         "page-down" : 34
     };
 
-    constructor(folders, filePointer){
-        this.folders = folders;
-        this.filePointer = filePointer;
-        this.currentFolder = folders[0];
-        this.#preselectFolder(this.currentFolder);
-        this.currentFolder.setupFiles();
-        this.fileSelectionAudio = 0.3;
-
-        this.running = false;
-
-        document.addEventListener('keydown', async (pressedKey) => {
-            if(this.running){
-
-                if(pressedKey.repeat){
+    static static_constructor(folders, filePointer){
+        Root.folders = folders;
+        Root.filePointer = filePointer;
+        Root.currentFolder = folders[0];
+        Root.#preselectFolder(Root.currentFolder);
+        Root.currentFolder.setupFiles();
+        Root.fileSelectionAudio = 0.3;
     
-                }else{
-                    switch(pressedKey.keyCode){
-                        case Root.controls["forward"]:
-                            if(!this.currentFolder.isSelected){
-                                //move folder above
-                                this.preselectAboveFolder();
-                                this.currentFolder.setupFiles();
-                            }else{
-                                //move file above
-                                this.currentFolder.selectAboveFile();
-                            }
-    
-                            break;
-        
-                        case Root.controls["backward"]:
-                            if(!this.currentFolder.isSelected){
-                                //move folder below
-                                this.preselectBelowFolder();
-                                this.currentFolder.setupFiles();
-                            }else{
-                                //move file below
-                                this.currentFolder.selectBelowFile();
-                            }
-                            break;
-                        
-                        case Root.controls["use"]:
-                            if(!this.currentFolder.isSelected){
-                                //select folder and file 1
-                                this.currentFolder.unpreselect();
-                                this.currentFolder.select();
-                                this.currentFolder.currentFile.select();
-                            }else{
-                                //trying to select a file with no success
-                                if(this.currentFolder.currentFile.audio){
-                                    //a changer
-                                    if(this.currentFolder.previousFile){
-                                        this.currentFolder.previousFile.stopAudio();
-                                    }
-                                    this.currentFolder.currentFile.audio.play();
-                                }else{
-                                    this.currentFolder.currentFile.bip();
-                                }
-                            }
-                            break;
-                        case Root.controls["return"]:
-                            if(this.currentFolder.isSelected){
-                                //unselect folder
-                                this.currentFolder.unselect(false);
-                                this.currentFolder.currentFile.unselect();
-                            }else{
-                                //return to sign in
-                                display(menu, 'none');
-                                await runMosaicTransition();
-                                location.reload();
-                            }
-                            break;
-                    }
-                }
-            }
-        });
+        Root.running = false;
     }
 
-
-    getAboveFolder(){
-        let index = this.#getCurrentFolderIndex();
-        return (index != 0) ? this.folders[index-1] : this.folders[this.folders.length-1];
+    static getAboveFolder(){
+        let index = Root.#getCurrentFolderIndex();
+        return (index != 0) ? Root.folders[index-1] : Root.folders[Root.folders.length-1];
     }
     
-    getBelowFolder(){
-        let index = this.#getCurrentFolderIndex();
-        return (index != (this.folders.length-1)) ? this.folders[index+1] : this.folders[0];
+    static getBelowFolder(){
+        let index = Root.#getCurrentFolderIndex();
+        return (index != (Root.folders.length-1)) ? Root.folders[index+1] : Root.folders[0];
     }
 
-    resetFolders(){
+    static resetFolders(){
         for(let i = 0; i<4; i++){
-            this.folders[i].classList.remove('selected', 'preselected');
+            Root.folders[i].classList.remove('selected', 'preselected');
         }
     }
 
-    #preselectFolder(folder){
-        if(!this.currentFolder.isSelected){
-            this.currentFolder.unselect();
-            this.currentFolder.unpreselect();
-            this.currentFolder = folder;
-            this.currentFolder.preselect();
+    static #preselectFolder(folder){
+        if(!Root.currentFolder.isSelected){
+            Root.currentFolder.unselect();
+            Root.currentFolder.unpreselect();
+            Root.currentFolder = folder;
+            Root.currentFolder.preselect();
 
-            let index = this.#getCurrentFolderIndex(); 
+            let index = Root.#getCurrentFolderIndex(); 
             for(let i=1; i<=4; i++){
                 if(i == index) continue;
                 let className = 'step'+i;
-                this.filePointer.classList.remove(className);
+                Root.filePointer.classList.remove(className);
             }
-            this.filePointer.classList.add('step'+ (index+1));
+            Root.filePointer.classList.add('step'+ (index+1));
         }
     }
 
-    #getCurrentFolderIndex(){
-        return this.folders.indexOf(this.currentFolder);
+    static #getCurrentFolderIndex(){
+        return Root.folders.indexOf(Root.currentFolder);
     }
 
-    preselectAboveFolder(){
-        this.#preselectFolder(this.getAboveFolder());
+    static preselectAboveFolder(){
+        Root.#preselectFolder(Root.getAboveFolder());
     }
     
-    preselectBelowFolder(){
-        this.#preselectFolder(this.getBelowFolder());
+    static preselectBelowFolder(){
+        Root.#preselectFolder(Root.getBelowFolder());
     }
 
     

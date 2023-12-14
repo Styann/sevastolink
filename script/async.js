@@ -28,7 +28,7 @@ function waitForKey(key, click = false){
     });
 };
 
-function waitAnimationEnd(element){
+function waitAnimationEnded(element){
     return new Promise(resolve => {
         var handler = event => {
             document.removeEventListener('animationend', handler);

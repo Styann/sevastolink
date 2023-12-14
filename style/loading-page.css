@@ -14,9 +14,9 @@
     grid-template-columns: 100%;
     grid-template-rows: 60% 35%;
     grid-row-gap: 5%;
-    }
-    
-.logo { 
+}
+
+.logo {
     grid-area: 1 / 1 / 2 / 2; 
 }
 
@@ -26,7 +26,7 @@
     font-size: 20px;
 }
 
-.progress-bar-wrapper { 
+.progress-bar-wrapper{
     grid-area: 2 / 1 / 3 / 2;
 }
 
@@ -51,9 +51,9 @@
 
     background-color: var(--foreground);
 
-    animation: progressing 3.5s;
+    animation: progressing 0.1s;/*3.5s*/
     animation-timing-function: steps(1);
-    /*animation-delay: 2s;*/
+    /* animation-delay: 2s; */
     animation-fill-mode: forwards;
     animation-play-state: paused;
 }

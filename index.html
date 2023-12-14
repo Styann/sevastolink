@@ -91,7 +91,7 @@
 
                 <div class="ulb"></div>
                 <div id="utility" class="folder utility">
-                    <label class="retro">UTILITY</label>
+                    <label class="retro">NOSTROMO...</label>
                 </div>
                 <div class="urb"></div>       
             </div>
@@ -134,7 +134,7 @@
         const audioFolder = new Folder('audio', document.getElementById('audio'), [get(0,'alb'), get(0, 'arb')]);
         const utilityFolder = new Folder('utility', document.getElementById('utility'), [get(0,'ulb'), get(0, 'urb')]);
 
-        const root = new Root([personalFolder, sharedFolder, audioFolder, utilityFolder], get('file-pointer'));
+        Root.static_constructor([personalFolder, sharedFolder, audioFolder, utilityFolder], get('file-pointer'));
 
         async function runMosaicTransition(){
             display(mosaic_loading, 'grid');
@@ -167,22 +167,97 @@
         display(loadingPage, 'grid');
     
         animationState(progressbar, true);
+        progressbar.addEventListener
         startup.play();
-        
-        
-
-        await delay(5500);
-        loop.volume = 0.045;
-        display(loadingPage, 'none');
-        //2
     
-        await runMosaicTransition();
+        async function progress_bar_animation_handler(){
+            await delay(1000);
+            
+            loop.volume = 0.045;
+            display(loadingPage, 'none');
+            await runMosaicTransition();
+            
+            display(menu, 'grid');
+        }
         
-        //3
-        display(menu, 'grid');
-        root.running = true;
-            //3
-        //})();
+        progressbar.addEventListener('animationend', progress_bar_animation_handler, true);
+        progressbar.removeEventListener('animationend', progress_bar_animation_handler, false);
+
+        console.log('->', Root)
+        // grant user to browse
+        Root.running = true;
+
+        async function controls_handler(pressedKey){
+            if(Root.running){
+
+                if(pressedKey.repeat){
+
+                }
+                else{
+                    switch(pressedKey.keyCode){
+                        case Root.controls["forward"]:
+                            if(!Root.currentFolder.isSelected){
+                                //move folder above
+                                Root.preselectAboveFolder();
+                                Root.currentFolder.setupFiles();
+                                await delay(2000);
+                            }else{
+                                //move file above
+                                Root.currentFolder.selectAboveFile();
+                            }
+
+                            break;
+
+                        case Root.controls["backward"]:
+                            if(!Root.currentFolder.isSelected){
+                                //move folder below
+                                Root.preselectBelowFolder();
+                                Root.currentFolder.setupFiles();
+                            }else{
+                                //move file below
+                                Root.currentFolder.selectBelowFile();
+                            }
+                            break;
+                        
+                        case Root.controls["use"]:
+                            if(!Root.currentFolder.isSelected){
+                                //select folder and file 1
+                                Root.currentFolder.unpreselect();
+                                Root.currentFolder.select();
+                                Root.currentFolder.currentFile.select();
+                            }else{
+                                //trying to select a file with no success
+                                if(Root.currentFolder.currentFile.audio){
+                                    //a changer
+                                    if(Root.currentFolder.previousFile){
+                                        Root.currentFolder.previousFile.stopAudio();
+                                    }
+                                    Root.currentFolder.currentFile.audio.play();
+                                }else{
+                                    Root.currentFolder.currentFile.bip();
+                                }
+                            }
+                            break;
+                        case Root.controls["return"]:
+                            if(Root.currentFolder.isSelected){
+                                //unselect folder
+                                Root.currentFolder.unselect(false);
+                                Root.currentFolder.currentFile.unselect();
+                            }else{
+                                //return to sign in
+                                display(menu, 'none');
+                                await runMosaicTransition();
+                                location.reload();
+                                
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            document.addEventListener('keydown', controls_handler, true);
+            //document.removeEventListener('keydown', controls_handler, false);
 
     </script>
 
