@@ -187,13 +187,17 @@
         // grant user to browse
         Root.running = true;
 
+        setTimeout(() => {
+            console.log("end timer")
+        }, "5000");
+
         async function controls_handler(pressedKey){
             if(Root.running){
 
                 if(pressedKey.repeat){
 
                 }
-                else{
+                else if(Root.running){
                     switch(pressedKey.keyCode){
                         case Root.controls["forward"]:
                             if(!Root.currentFolder.isSelected){
@@ -213,6 +217,10 @@
                                 //move folder below
                                 Root.preselectBelowFolder();
                                 Root.currentFolder.setupFiles();
+                                Root.running = false;
+
+                                console.log(Folder.preselectAudio.duration * 1000)
+                                setTimeout(() => {Root.running = true;}, (Folder.preselectAudio.duration * 100));
                             }else{
                                 //move file below
                                 Root.currentFolder.selectBelowFile();
@@ -244,7 +252,7 @@
                                 Root.currentFolder.unselect(false);
                                 Root.currentFolder.currentFile.unselect();
                             }else{
-                                //return to sign in
+                                //return to sign in / reload page
                                 display(menu, 'none');
                                 await runMosaicTransition();
                                 location.reload();
@@ -257,6 +265,7 @@
             }
             
             document.addEventListener('keydown', controls_handler, true);
+            Root.running = true;
             //document.removeEventListener('keydown', controls_handler, false);
 
     </script>

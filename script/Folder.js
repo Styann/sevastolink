@@ -105,6 +105,8 @@ export class Folder{
     }
 
     preselect(){
+        console.log(Folder.preselectAudio.readyState)
+        if(Folder.preselectAudio.readyState)
         this.element.classList.add('folder-preselected');
         this.borders[1].classList.add('right-border-preselected');
         Folder.preselectAudio.play();
