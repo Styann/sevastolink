@@ -51,7 +51,8 @@
 
     background-color: var(--foreground);
 
-    animation: progressing 0.1s;/*3.5s*/
+    animation: progressing 3.5s;
+    /*animation: progressing 0.1s;/*for debug*/
     animation-timing-function: steps(1);
     /* animation-delay: 2s; */
     animation-fill-mode: forwards;

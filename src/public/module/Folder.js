@@ -70,9 +70,6 @@ export class Folder{
             }
             
         }
-        console.log(this.files)
-
-    
     }
 
     #toggleBorders(turnon = true){
@@ -105,7 +102,7 @@ export class Folder{
     }
 
     preselect(){
-        console.log(Folder.preselectAudio.readyState)
+        //console.log(Folder.preselectAudio.readyState)
         if(Folder.preselectAudio.readyState)
         this.element.classList.add('folder-preselected');
         this.borders[1].classList.add('right-border-preselected');

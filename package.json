@@ -1,0 +1,26 @@
+{
+  "name": "sevastolink",
+  "version": "1.0.0",
+  "description": "A web version of the sevastolink terminal from the horror game Alien Isolation.",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Styann/sevastolink.git"
+  },
+  "author": "Styann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Styann/sevastolink/issues"
+  },
+  "homepage": "https://github.com/Styann/sevastolink#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "url": "^0.11.3"
+  }
+}

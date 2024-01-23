@@ -19,7 +19,7 @@
 .arb { grid-area: 4 / 3 / 5 / 4; }
 
 
-.utility {
+.nostromo {
     grid-area: 5 / 2 / 6 / 3; 
 }
 .ulb { grid-area: 5 / 1 / 6 / 2; }

@@ -1,4 +1,4 @@
-export class Root{
+export class Root {
 
     static filePointer;
     static folders;
@@ -7,14 +7,14 @@ export class Root{
 
     static document;
     static controls = {
-        "forward" : 90,
-        "backward" : 83,
-        "left" : 81,
-        "right" : 68,
-        "use": 69,
-        "return" : 65,
-        "page-up" : 33,
-        "page-down" : 34
+        "forward":   'KeyW',
+        "backward":  'KeyS',
+        "left":      'KeyA',
+        "right":     'KeyD',
+        "use":       'KeyE',
+        "return":    'KeyQ',
+        "page-up":   'PageUp',
+        "page-down": 'PageDown'
     };
 
     static static_constructor(folders, filePointer){
@@ -72,7 +72,4 @@ export class Root{
     static preselectBelowFolder(){
         Root.#preselectFolder(Root.getBelowFolder());
     }
-
-    
-
 }

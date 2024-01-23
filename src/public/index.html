@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVASTOLINK</title>
+
+    
+    <link rel="stylesheet" href="./style/app.css">
+    
+    <link rel="stylesheet" href="./style/mosaic-loading.css">
+
+    <link rel="stylesheet" href="./style/sign-in.css">
+    <link rel="stylesheet" href="./style/loading-page.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/ArchiveLog.css">
+    <link rel="stylesheet" href="./style/Folder.css">
+
+    <script type="module" src="./public.js"></script>
+</head>
+<body>
+
+    <div id="mosaic-loading" class="mosaic-loading"></div>
+
+
+    <div id="sign-in" class="sign-in-background">
+        <div class="sign-in">
+            <label class="sign-in-label retro-black">SIGN&nbsp;&nbsp;&nbsp;IN</label>
+        </div>
+    </div>
+
+    <!-- loading page -->
+    <div id="loading-page" class="loading-page">
+
+        <div class="logo">
+            <p class="retro-green" style="font-size: 150px; margin: 0;">SEVASTOLINK</p>
+    
+            <p class="retro-green company-name fz30">AN LM-LINK PRODUCT</p>
+        </div>
+       
+    
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+  
+            <p class="copyright retro-green fz30">(C) LM-LINK DATA SYSTEMS</p>    
+        </div>
+    
+    </div>
+    
+    <!-- menu -->
+    <div id="menu" class="menu">
+        <div class="title-bar retro-white">
+            <label class="retro-black fz30">PERSONAL TERMINAL</label>
+            <div class="close-button"></div>
+        </div>
+
+        <div class="parent">
+
+            <div class="folders">
+                <div class="folders-label">
+                    <label class="retro-green fz30">FOLDERS</label>
+                </div>
+         
+                <div class="plb"></div>
+                <div id="personal" class="folder personal">
+                    <label class="retro">PERSONAL</label>
+                </div>
+                <div class="prb right-border-preselected"></div>
+
+                <div class="slb"></div>
+                <div id="shared" class="folder shared">
+                    <label class="retro">SHARED</label>
+                </div>
+                <div class="srb"></div>
+          
+                <div class="alb"></div>
+                <div id="audio" class="folder audio">
+                    <label class="retro">AUDIO</label>
+                </div>            
+                <div class="arb"></div>
+
+                <div class="ulb"></div>
+                <div id="nostromo" class="folder nostromo">
+                    <label class="retro">NOSTROMO...</label>
+                </div>
+                <div class="urb"></div>       
+            </div>
+
+            <div class="div2">
+                <div id="file-pointer" class="angle step4"></div> 
+            </div>
+            
+            <div class="div3">
+                <div id="archive-log-list" class="archive-log-list"></div>
+
+                <div tabindex="0" id="archive-log-content" class="archive-log-content retro-white fz30 disabled-focus">
+                    <p></p>
+                </div>
+            </div> 
+    </div>
+</body>
+
+</html>

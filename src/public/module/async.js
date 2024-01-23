@@ -1,11 +1,11 @@
-function delay(milliseconds){
+export function delay(milliseconds){
     return new Promise(resolve => {
         setTimeout(resolve, milliseconds);
     });
 }
 
  
-function waitForKey(key, click = false){
+export function waitForKey(key, click = false){
     return new Promise(resolve => {
         var onkeydown = e => {
             if( typeof key === 'undefined' || e.key === key){
@@ -28,7 +28,7 @@ function waitForKey(key, click = false){
     });
 };
 
-function waitAnimationEnded(element){
+export function waitAnimationEnded(element){
     return new Promise(resolve => {
         var handler = event => {
             document.removeEventListener('animationend', handler);
@@ -39,7 +39,7 @@ function waitAnimationEnded(element){
     });
 }
 
-function waitForAudio(element){
+export function waitForAudio(element){
     return new Promise(resolve => {
         var handler = event => {
             document.removeEventListener('ended', handler);

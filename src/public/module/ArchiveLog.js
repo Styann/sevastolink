@@ -114,7 +114,7 @@ export class ArchiveLog{
             
             let playIcon = document.createElement('img');
             playIcon.classList.add('play-icon');
-            playIcon.src = './picture/play-icon.svg'
+            playIcon.src = './assets/play-icon.svg'
             playIcon.alt =  'play audio';
 
             div.appendChild(playLabel);
